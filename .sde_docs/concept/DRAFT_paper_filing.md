@@ -2,7 +2,7 @@
 
 ## 📌 Status
 
-`DRAFT` · v3 (v2 rewrote v1 by deletion after adversarial review returned `REVISE`; v3 folds in the user's confirmations — a flatbed scanner exists, which changes the capture design)
+`DRAFT` · v5 (v2 rewrote v1 by deletion; v3 folded in the flatbed; v4 added a "closed volumes" framework; **v5 deletes that framework again** after a second adversarial review found its load-bearing technical fact was false and its own flagship example failed its own test)
 
 | Field | Value |
 |---|---|
@@ -235,8 +235,15 @@ trustworthy answer to *"do I have this?"*.
 **Principle 1 makes the check free.** Because the physical address *is* the filing month, and
 paperless can filter on `added`:
 
-> **Monthly, 30 seconds:** count the sheets behind the current month divider; compare with the
-> document count for that month in paperless. Equal ⇒ the whole chain worked.
+> **Monthly, 30 seconds:** count the sheets behind the previous month's divider; compare with the
+> document count paperless reports for roughly that period. **Roughly equal ⇒ the chain worked.**
+
+⚠️ **Roughly, not exactly** — and the reason matters. `added` is stamped at *consumption*, not at
+filing, and the architecture guarantees a lag: a letter filed on 30 August while the PC is off gets
+`added = 2 September` when the machine next boots. An exact-match check would therefore report a
+false discrepancy **every single month, in both directions**, and would be ignored within two — which
+is precisely the abandonment mode this check exists to catch. A drift of one or two is normal; a
+drift of twenty means something broke. The divider is the address; `added` is only its index proxy.
 
 This is not a bolt-on guard — it is a property that the numbered design could not offer, because a
 number tells you nothing about what is *missing*. It also detects OEM sync kills, a full disk, a
@@ -282,6 +289,98 @@ Two consequences worth stating:
 If the scanner can scan-to-folder over the network, point it straight at `consume/` and the phone
 path becomes purely optional. If it is USB-only, scan into a local folder that Syncthing also
 watches — same result, one extra hop.
+
+### Three questions about bounded sets
+
+An earlier version answered these with a new category ("closed volumes"), a three-part test and a
+comparison table. **That framework has been deleted.** Adversarial review showed it produced exactly
+two objects in ten years, that its own flagship example failed its own criterion, and that the
+technical fact it rested on was false. Two objects need two answers, not a taxonomy.
+
+**The false fact, corrected first, because it was load-bearing.** v4 claimed `added` is
+`editable=False` and therefore *unchangeable*. `editable=False` is a Django **form-layer** flag — it
+keeps a field out of ModelForms and skips it in model validation; it is not a database constraint.
+`added` is serialized verbatim into paperless' export manifest, read back by the importer, and
+settable in one line via `manage.py shell`. What is true is narrower: **DRF maps `editable=False` to
+`read_only=True`, so `added` cannot be changed through the UI or the REST API.** That is a
+*convention*, not an invariant — enough to build on, but the concept must not claim more.
+
+#### Answer 1 — the 3-month backlog
+
+Your instinct is right: scanned in August, all ~100 documents get `added = 2026-08`, whatever date is
+printed on them.
+
+Backdating them into retroactive May/June/July dividers *is* technically possible (see above). It is
+still the wrong move — it scatters a one-off pile across three dividers and starts the running
+archive dirty, for no retrieval benefit.
+
+**So the backlog becomes binder zero.** One binder labelled `Altbestand bis 2026-08`, shelved before
+the first month divider. Scan the pile in whatever order it is already in, file it in that same
+order, tag it `altbestand`. The running archive starts *empty* at its first month.
+
+This is not a new scheme — Principle 1 already labels a finished binder by its range (*"Binder full →
+label it `2026-01 … 2026-08`, cellar, next binder"*). Altbestand is simply the volume before the
+first.
+
+⚠️ v4 told you to sort the pile by document date first, calling it *"one pass, costs nothing extra"*.
+**Deleted.** Sorting 60–100 items by hand is 30–60 minutes; multi-page items must be clipped first or
+they interleave and destroy the scan order; many sheets carry no unambiguous date at all (a
+Kontoauszug carries a period, an invoice carries three candidate dates). The payoff would be ~15
+seconds of flipping in a binder you open perhaps once a year.
+
+#### Answer 2 — the old binders, three years back
+
+**Don't.** But your own question contains the better rule, because you named a *purpose*
+(Herstellungskosten), not a period.
+
+**Retro-digitize by purpose, never by completeness.** "Three years back" is a completeness goal whose
+payoff is search over documents you have demonstrably not searched in three years. "Everything
+belonging to the house build" is a purpose, it is bounded, and it has a payoff.
+
+Old binders are also *already organized* — that is what a binder is. Whether you want search over
+them is measurable: for the next six months, note every time you actually walk to the cellar.
+
+#### Answer 3 — Hausbau: digital yes, binder no
+
+**Estimating the cost is digital, and a binder actively does not help** — it gives you a stack to
+flip and sums nothing. Paperless has a native **`MONETARY`** custom-field type (verified in the
+model): tag `hausbau`, field `betrag`, filter, export, sum.
+
+**Scan the build documents and put them straight back into the old binders they came from.** No new
+binder. v4's reasons for a physical Hausbau volume do not survive:
+
+- *"Originals may matter for § 634a defect claims"* — contradicted by this concept's **own retention
+  table**, which already adjudicated build invoices on the own house as **"scan sufficient"**, in the
+  very row that cites § 634a.
+- *"It is what you hand to a Steuerberater"* — contradicted one paragraph earlier: the complete,
+  sourced, summed list **is** the better hand-over artifact.
+- § 634a runs out ~2028, so it would be a permanent physical object serving a reason with a two-year
+  shelf life, in a concept that never re-files anything.
+
+The `hausbau` tag records which old binder each original sits in, so nothing is lost.
+
+⚠️ **Three warnings on the number itself — the last two are corrections to v4:**
+
+- **Principle 6 at full strength.** Every amount must be checked against its image before entering a
+  sum — LLM extraction drifts precisely on amounts. For 100–300 invoices that is real one-time work,
+  still far less than reconstructing it from paper.
+- **A sum of invoices is not "Herstellungskosten".** [§ 255 Abs. 2 HGB](https://www.gesetze-im-internet.de/hgb/__255.html)
+  defines the term and Abs. 3 excludes borrowing costs — but **the rule with the most money attached
+  for a household with 2–3 rentals is [§ 6 Abs. 1 Nr. 1a EStG](https://www.gesetze-im-internet.de/estg/__6.html)**:
+  *"Zu den Herstellungskosten eines Gebäudes gehören auch Aufwendungen für Instandsetzungs- und
+  Modernisierungsmaßnahmen, die innerhalb von drei Jahren nach der Anschaffung des Gebäudes
+  durchgeführt werden, wenn die Aufwendungen ohne die Umsatzsteuer 15 Prozent der Anschaffungskosten
+  des Gebäudes übersteigen"* (anschaffungsnahe Herstellungskosten). It reclassifies immediately
+  deductible Erhaltungsaufwand into decades-long Herstellungskosten — and it is itself a **retention
+  rule**, because you must be able to evidence the three-year spend. **Classification is a
+  Steuerberater call; what the system delivers is the sourced list.**
+- **For a self-occupied house the tax motive is weaker than it looks.**
+  [§ 23 Abs. 1 Nr. 1 S. 3 EStG](https://www.gesetze-im-internet.de/estg/__23.html) exempts assets used
+  *"ausschließlich zu eigenen Wohnzwecken"*. What remains: a later conversion to rental (the figure
+  then becomes the AfA basis under § 7 Abs. 4 EStG), § 634a until ~2028, insurance valuation.
+  ⚠️ For the **rental apartments** § 23 does bite within ten years — but **not "directly"**, as v4
+  said: § 23 Abs. 3 S. 4 EStG requires the Anschaffungs-/Herstellungskosten to be *reduced by the AfA
+  already claimed*, so a raw invoice sum overstates the deductible basis.
 
 ---
 
@@ -375,14 +474,16 @@ filters load-bearing, that is an accepted risk, not a covered one.
 |---|---|---|
 | **Measure** (before anything) | Count one month of capture-worthy post. Count deadlines missed in the last year. | Two numbers exist. If capture-worthy post is under ~10/month, the honest recommendation shrinks to a folder of PDFs and no DMS at all. |
 | **0 — Capture** (one evening) | Month dividers in a binder; flatbed → `consume/` (scan-to-folder if available); MakeACopy + Syncthing-Fork + doze exemption for the phone path; paperless via SQLite compose with the settings table above; backup target | Both paths land a searchable document, and the monthly reconciliation check works |
-| **1 — Backlog & routine** | **Run the 3-month pile through the flatbed in one afternoon** — highest-quality input the archive will get; establish the two trays + Betriebskosten sleeves; tags per property | The pile is gone; the tray is the only paper without a decision |
+| **1 — Backlog & routine** | **Run the 3-month pile through the flatbed in one afternoon**, in whatever order it is already in, into binder zero `Altbestand bis 2026-08` (Answer 1) — highest-quality input the archive will get; start the running archive *empty*; establish the two trays + Betriebskosten sleeves; tags per property | The pile is gone, the running archive starts clean at month one, and the tray is the only paper without a decision |
 | **2 — Suggestions** | Switch on core AI (`openai-like` → Anthropic). Spot-check ~20 documents. | Correspondent/type suggestions are right often enough to accept blind |
 | **3 — Actions** — ⚠️ **conditional** | Build **only if** the measured missed-deadline count is ≥3/year. Otherwise: the person who opens the letter puts it in Offen and writes the date in the shared family calendar. | — |
 | **4 — Outlook (do not build)** | Email invoices (paperless has native IMAP mail rules), bank statements, tax agent | only the seam is defined: everything becomes a document with custom fields |
 
-**Old binders: leave them alone.** Draw a line at the start date; retro-digitize a document only when
-it is actually needed. Bulk-scanning years of history is the classic way these projects die before
-delivering anything.
+**Old binders: leave them alone** — with one principled exception. Draw a line at the start date and
+retro-digitize a document only when it is actually needed. Bulk-scanning years of history is the
+classic way these projects die before delivering anything. The exception is **purpose-driven**
+retro-digitization of a closed set with a payoff — the house build being the obvious candidate
+(Answer 3 above). Never "three years back" as a completeness goal.
 
 ---
 
@@ -453,6 +554,12 @@ months. If semantic recall is ever wanted, paperless' own opt-in LLM index provi
 3. **Does the scanner have a sheet feeder (ADF), and can it scan-to-folder over the network?**
    Decides whether the backlog is an afternoon or two, and whether the phone path is needed at all
    for anything but convenience. *(Resolved: a flatbed exists — Principle 8.)*
-4. **Does the "Offen" tray need a completion trigger?** Nothing in the design notices when an action
+4. **Is a Hausbau cost reconstruction worth the one-time effort?** It means verifying 100–300 amounts
+   by hand against their images (Principle 6). Worth deciding *before* Stage 1, so the build documents
+   can be scanned in the same session as the backlog — scanned and **returned to their old binders**,
+   not extracted into a new one.
+5. **How often do you actually go to the cellar?** Note it for six months. It is the measurement that
+   settles whether digitizing the old binders is worth anything at all.
+6. **Does the "Offen" tray need a completion trigger?** Nothing in the design notices when an action
    is done. If the tray does not empty by itself in month two, that is the signal that the shared
    calendar — not software — is the missing piece.

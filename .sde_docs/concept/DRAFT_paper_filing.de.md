@@ -2,7 +2,7 @@
 
 ## 📌 Status
 
-`DRAFT` · v3 (v2 hat v1 nach der Gegenprüfung durch Streichung neu geschrieben — Urteil „Überarbeiten"; v3 arbeitet die Bestätigungen des Nutzers ein — **ein Flachbettscanner ist vorhanden**, was das Erfassungsdesign verändert)
+`DRAFT` · v5 (v2 schrieb v1 durch Streichung neu; v3 arbeitete den Flachbett ein; v4 führte ein Framework „abgeschlossene Bände" ein; **v5 streicht dieses Framework wieder**, nachdem eine zweite Gegenprüfung gezeigt hat, dass sein tragender technischer Fakt falsch war und sein eigenes Paradebeispiel seinen eigenen Test nicht besteht)
 
 | Feld | Wert |
 |---|---|
@@ -247,8 +247,17 @@ Systems ist eine verlässliche Antwort auf *„habe ich das?"*.
 **Prinzip 1 macht die Kontrolle kostenlos.** Weil die physische Adresse *der Ablagemonat ist* und
 Paperless nach `added` filtern kann:
 
-> **Monatlich, 30 Sekunden:** die Blätter hinter dem aktuellen Monatstrenner zählen und mit der
-> Dokumentenzahl für diesen Monat in Paperless vergleichen. Gleich ⇒ die ganze Kette hat funktioniert.
+> **Monatlich, 30 Sekunden:** die Blätter hinter dem Trenner des *Vormonats* zählen und mit der
+> Dokumentenzahl vergleichen, die Paperless für ungefähr diesen Zeitraum meldet. **Ungefähr gleich ⇒
+> die Kette hat funktioniert.**
+
+⚠️ **Ungefähr, nicht exakt** — und der Grund zählt. `added` wird beim *Konsumieren* gestempelt, nicht
+beim Abheften, und die Architektur garantiert eine Verzögerung: Ein am 30. August abgehefteter Brief
+bekommt `added = 2. September`, wenn der Rechner das nächste Mal hochfährt. Eine Exakt-Prüfung würde
+deshalb **jeden Monat einen Fehlalarm melden, in beide Richtungen**, und wäre nach zwei Monaten
+ignoriert — genau der Abbruchmodus, den diese Prüfung abfangen soll. Eine Abweichung von ein oder zwei
+ist normal; eine von zwanzig heißt, etwas ist kaputt. Der Trenner ist die Adresse, `added` nur ihr
+Index-Stellvertreter.
 
 Das ist kein nachträglicher Wächter, sondern eine Eigenschaft, die das nummerierte Design nicht bieten
 konnte — eine Nummer sagt nichts darüber, was **fehlt**. Eine Abgleichung erkennt außerdem
@@ -298,6 +307,105 @@ Zwei Folgen sind erwähnenswert:
 Kann der Scanner per Netzwerk in einen Ordner scannen, richte ihn direkt auf `consume/` — dann wird
 der Handy-Pfad rein optional. Ist er nur per USB angebunden, scanne in einen lokalen Ordner, den
 Syncthing ebenfalls beobachtet — gleiches Ergebnis, ein Zwischenschritt mehr.
+
+### Drei Fragen zu begrenzten Mengen
+
+Eine frühere Fassung beantwortete diese mit einer neuen Kategorie („abgeschlossene Bände"), einem
+Dreifach-Test und einer Vergleichstabelle. **Dieses Framework ist gestrichen.** Die Gegenprüfung hat
+gezeigt: Es erzeugt in zehn Jahren genau zwei Objekte, sein eigenes Paradebeispiel besteht sein
+eigenes Kriterium nicht, und der technische Fakt, auf dem es steht, war falsch. Zwei Objekte brauchen
+zwei Antworten, keine Taxonomie.
+
+**Zuerst der falsche Fakt, weil er tragend war.** v4 behauptete, `added` sei `editable=False` und
+damit *unveränderlich*. `editable=False` ist ein Django-**Formular**-Flag — es hält ein Feld aus
+ModelForms heraus und überspringt es bei der Modellvalidierung; es ist keine Datenbank-Beschränkung.
+`added` wird wörtlich in Paperless' Export-Manifest serialisiert, vom Importer wieder eingelesen und
+lässt sich mit einer Zeile über `manage.py shell` setzen. Wahr ist nur das Engere: **DRF bildet
+`editable=False` auf `read_only=True` ab, `added` ist also über UI und REST-API nicht änderbar.** Das
+ist eine *Konvention*, kein Invariant — tragfähig genug, aber das Konzept darf nicht mehr behaupten.
+
+#### Antwort 1 — der 3-Monats-Rückstand
+
+Deine Intuition stimmt: Im August gescannt, bekommen alle ~100 Dokumente `added = 2026-08`, egal
+welches Datum auf dem Papier steht.
+
+Sie rückwirkend in Mai/Juni/Juli-Trenner zurückzudatieren *ist* technisch möglich (siehe oben).
+Trotzdem falsch — es verteilt einen einmaligen Stapel auf drei Trenner und lässt das laufende Archiv
+unsauber starten, ohne jeden Auffindbarkeits-Gewinn.
+
+**Also wird der Rückstand zu Band null.** Ein Ordner mit der Aufschrift `Altbestand bis 2026-08`, vor
+den ersten Monatstrenner gestellt. Den Stapel in der Reihenfolge scannen, in der er ohnehin liegt, in
+derselben Reihenfolge abheften, mit `altbestand` taggen. Das laufende Archiv startet *leer* bei
+seinem ersten Monat.
+
+Das ist kein neues Schema — Prinzip 1 beschriftet einen vollen Ordner ohnehin mit seinem Bereich
+(*„Ordner voll → beschriften mit `2026-01 … 2026-08`, in den Keller, nächster Ordner"*). Altbestand
+ist schlicht der Band davor.
+
+⚠️ v4 hat dir geraten, den Stapel vorher nach Dokumentdatum zu sortieren — *„ein Durchgang, kostet
+nichts extra"*. **Gestrichen.** 60–100 Positionen von Hand zu sortieren sind 30–60 Minuten;
+mehrseitige Dokumente müssen vorher geklammert werden, sonst verschachteln sie sich und zerstören die
+Scan-Reihenfolge; und viele Blätter tragen gar kein eindeutiges Datum (ein Kontoauszug trägt einen
+Zeitraum, eine Rechnung drei Datumskandidaten). Der Ertrag wären ~15 Sekunden Blättern in einem
+Ordner, den du vielleicht einmal im Jahr öffnest.
+
+#### Antwort 2 — die alten Ordner, drei Jahre zurück
+
+**Nicht machen.** Aber deine eigene Frage enthält die bessere Regel, denn du hast einen *Zweck*
+genannt (Herstellungskosten), keinen Zeitraum.
+
+**Nachträglich digitalisieren nach Zweck, nie nach Vollständigkeit.** „Drei Jahre zurück" ist ein
+Vollständigkeitsziel, dessen Ertrag Suche über Dokumente ist, die du nachweislich drei Jahre lang
+nicht gesucht hast. „Alles, was zum Hausbau gehört" ist ein Zweck, begrenzt, mit Ertrag.
+
+Alte Ordner sind außerdem *bereits organisiert* — dafür ist ein Ordner da. Ob du Suche darüber
+willst, ist messbar: Notiere die nächsten sechs Monate jedes Mal, wenn du tatsächlich in den Keller
+gehst.
+
+#### Antwort 3 — Hausbau: digital ja, Ordner nein
+
+**Die Kosten zu schätzen ist digital, und ein Ordner hilft dabei aktiv nicht** — er gibt dir einen
+Stapel zum Blättern und summiert nichts. Paperless hat einen nativen **`MONETARY`**-Feldtyp (im
+Modell verifiziert): Tag `hausbau`, Feld `betrag`, filtern, exportieren, summieren.
+
+**Die Baudokumente scannen und direkt zurück in die alten Ordner legen, aus denen sie kamen.** Kein
+neuer Ordner. v4s Gründe für einen physischen Hausbau-Band halten nicht:
+
+- *„Originale könnten für § 634a-Mängelansprüche zählen"* — widerlegt durch die **eigene
+  Aufbewahrungstabelle** dieses Konzepts, die Baurechnungen am eigenen Haus bereits als **„Scan
+  genügt"** eingeordnet hat, und zwar in genau der Zeile, die § 634a zitiert.
+- *„Das übergibt man dem Steuerberater"* — widerlegt einen Absatz vorher: Die vollständige, belegte,
+  summierte Liste **ist** das bessere Übergabeartefakt.
+- § 634a läuft ~2028 aus — es wäre also ein dauerhaftes physisches Objekt für einen Grund mit zwei
+  Jahren Haltbarkeit, in einem Konzept, das nie etwas umheftet.
+
+Der Tag `hausbau` hält fest, in welchem alten Ordner das jeweilige Original liegt — es geht nichts
+verloren.
+
+⚠️ **Drei Warnungen zur Zahl selbst — die letzten beiden sind Korrekturen an v4:**
+
+- **Prinzip 6 in voller Schärfe.** Jeder Betrag muss gegen sein Bild geprüft werden, bevor er in eine
+  Summe eingeht — LLM-Extraktion driftet genau bei Beträgen. Bei 100–300 Rechnungen echte einmalige
+  Arbeit, immer noch weit weniger als die Rekonstruktion aus Papier.
+- **Eine Summe von Rechnungen sind keine „Herstellungskosten".**
+  [§ 255 Abs. 2 HGB](https://www.gesetze-im-internet.de/hgb/__255.html) definiert den Begriff, Abs. 3
+  schließt Fremdkapitalzinsen aus — aber **die Regel mit dem meisten Geld dahinter ist für einen
+  Haushalt mit 2–3 Mietwohnungen [§ 6 Abs. 1 Nr. 1a EStG](https://www.gesetze-im-internet.de/estg/__6.html)**:
+  *„Zu den Herstellungskosten eines Gebäudes gehören auch Aufwendungen für Instandsetzungs- und
+  Modernisierungsmaßnahmen, die innerhalb von drei Jahren nach der Anschaffung des Gebäudes
+  durchgeführt werden, wenn die Aufwendungen ohne die Umsatzsteuer 15 Prozent der Anschaffungskosten
+  des Gebäudes übersteigen"* (anschaffungsnahe Herstellungskosten). Sie stuft sofort abzugsfähigen
+  Erhaltungsaufwand in jahrzehntelang abzuschreibende Herstellungskosten um — und sie ist selbst eine
+  **Aufbewahrungsregel**, weil du die Ausgaben des Dreijahresfensters belegen können musst.
+  **Die Einordnung ist Steuerberater-Sache; was das System liefert, ist die belegte Liste.**
+- **Für ein selbstbewohntes Haus ist das Steuermotiv schwächer, als es aussieht.**
+  [§ 23 Abs. 1 Nr. 1 S. 3 EStG](https://www.gesetze-im-internet.de/estg/__23.html) nimmt
+  ausschließlich eigengenutzte Wirtschaftsgüter aus. Was bleibt: spätere Umwandlung in Vermietung
+  (dann AfA-Bemessungsgrundlage nach § 7 Abs. 4 EStG), § 634a bis ~2028, Versicherungsbewertung.
+  ⚠️ Bei den **Mietwohnungen** greift § 23 innerhalb von zehn Jahren sehr wohl — aber **nicht
+  „unmittelbar"**, wie v4 schrieb: § 23 Abs. 3 S. 4 EStG verlangt, dass die Anschaffungs-/
+  Herstellungskosten *um die bereits geltend gemachte AfA gemindert* werden. Eine rohe Rechnungssumme
+  überzeichnet die abziehbare Basis also.
 
 ---
 
@@ -393,14 +501,17 @@ Da Prinzip 3 gespeicherte Filter tragend macht, ist das ein akzeptiertes, kein a
 |---|---|---|
 | **Messen** (vor allem anderen) | Einen Monat erfassungswürdige Post zählen. Verpasste Fristen des letzten Jahres zählen. | Zwei Zahlen existieren. Liegt die erfassungswürdige Post unter ~10/Monat, schrumpft die ehrliche Empfehlung auf einen Ordner mit PDFs und gar kein DMS. |
 | **0 — Erfassung** (ein Abend) | Monatstrenner in einen Ordner; Flachbett → `consume/` (Scan-to-Folder, falls möglich); MakeACopy + Syncthing-Fork + Doze-Ausnahme für den Handy-Pfad; Paperless per SQLite-Compose mit der Einstellungstabelle oben; Backup-Ziel | Beide Pfade liefern ein durchsuchbares Dokument, und die monatliche Abgleichung funktioniert |
-| **1 — Rückstand & Routine** | **Den 3-Monats-Stapel an einem Nachmittag durch den Flachbett jagen** — das beste Eingangsmaterial, das das Archiv je bekommt; die zwei Ablagen + Betriebskosten-Hüllen einrichten; Tags pro Objekt | Der Stapel ist weg; die Ablage „Offen" ist das einzige Papier ohne Entscheidung |
+| **1 — Rückstand & Routine** | **Den 3-Monats-Stapel an einem Nachmittag durch den Flachbett jagen**, in der Reihenfolge, in der er ohnehin liegt — in Band null `Altbestand bis 2026-08` (Antwort 1); das beste Eingangsmaterial, das das Archiv je bekommt; das laufende Archiv *leer* starten; die zwei Ablagen + Betriebskosten-Hüllen einrichten; Tags pro Objekt | Der Stapel ist weg, das laufende Archiv startet sauber bei Monat eins, und die Ablage „Offen" ist das einzige Papier ohne Entscheidung |
 | **2 — Vorschläge** | Kern-KI einschalten (`openai-like` → Anthropic). ~20 Dokumente stichprobenartig prüfen. | Korrespondenten-/Typvorschläge stimmen oft genug, um sie blind zu akzeptieren |
 | **3 — Aktionen** — ⚠️ **konditional** | **Nur bauen, wenn** die gemessene Zahl verpasster Fristen ≥3/Jahr beträgt. Sonst: Wer den Brief öffnet, legt ihn in „Offen" und trägt das Datum in den Familienkalender ein. | — |
 | **4 — Ausblick (nicht bauen)** | E-Mail-Rechnungen (Paperless hat native IMAP-Mail-Regeln), Kontoauszüge, Steuer-Agent | nur die Naht wird definiert: alles wird ein Dokument mit Custom Fields |
 
-**Alte Ordner: in Ruhe lassen.** Einen Schnitt zum Startdatum ziehen; ein Dokument nur dann
-nachträglich digitalisieren, wenn es tatsächlich gebraucht wird. Jahre an Historie im Block zu scannen
-ist die klassische Art, wie solche Projekte sterben, bevor sie etwas liefern.
+**Alte Ordner: in Ruhe lassen** — mit einer prinzipiellen Ausnahme. Einen Schnitt zum Startdatum ziehen
+und ein Dokument nur dann nachträglich digitalisieren, wenn es tatsächlich gebraucht wird. Jahre an
+Historie im Block zu scannen ist die klassische Art, wie solche Projekte sterben, bevor sie etwas
+liefern. Die Ausnahme ist **zweckgetriebene** Nachdigitalisierung einer abgeschlossenen Menge mit
+Ertrag — der Hausbau ist der offensichtliche Kandidat (Antwort 3 oben). Niemals „drei Jahre
+zurück" als Vollständigkeitsziel.
 
 ---
 
@@ -475,6 +586,12 @@ eigener optionaler LLM-Index sie.
 3. **Hat der Scanner einen Einzug (ADF), und kann er über Netzwerk in einen Ordner scannen?**
    Entscheidet, ob der Rückstand ein Nachmittag oder zwei sind und ob der Handy-Pfad außer für
    Bequemlichkeit überhaupt gebraucht wird. *(Erledigt: Ein Flachbett ist vorhanden — Prinzip 8.)*
-4. **Braucht die Ablage „Offen" einen Erledigt-Auslöser?** Nichts im Design bemerkt, wenn eine Aktion
+4. **Ist eine Hausbau-Kostenrekonstruktion die einmalige Mühe wert?** Sie bedeutet, 100–300 Beträge von
+   Hand gegen ihre Bilder zu prüfen (Prinzip 6). Sollte *vor* Stufe 1 entschieden werden, damit die
+   Baudokumente in derselben Sitzung wie der Rückstand gescannt werden können — gescannt und
+   **zurück in ihre alten Ordner gelegt**, nicht in einen neuen herausgezogen.
+5. **Wie oft gehst du tatsächlich in den Keller?** Sechs Monate lang notieren. Das ist die Messung, die
+   entscheidet, ob das Digitalisieren der alten Ordner überhaupt etwas wert ist.
+6. **Braucht die Ablage „Offen" einen Erledigt-Auslöser?** Nichts im Design bemerkt, wenn eine Aktion
    fertig ist. Leert sich die Ablage in Monat zwei nicht von selbst, ist das das Signal, dass der
    gemeinsame Kalender — nicht Software — das fehlende Stück ist.
