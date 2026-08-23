@@ -2,7 +2,7 @@
 
 ## 📌 Status
 
-`DRAFT` · v5 (v2 rewrote v1 by deletion; v3 folded in the flatbed; v4 added a "closed volumes" framework; **v5 deletes that framework again** after a second adversarial review found its load-bearing technical fact was false and its own flagship example failed its own test)
+`DRAFT` · v6 (v2 rewrote v1 by deletion; v3 folded in the flatbed; v4 added a "closed volumes" framework and v5 deleted it again after a second adversarial review; **v6 fixes the volume at the user's estimate and drops the measurement gate — he wants to start**)
 
 | Field | Value |
 |---|---|
@@ -11,7 +11,9 @@
 | Capture device | Android **plus an existing flatbed scanner** (user, 2026-08-22) |
 | Storage | Local PC only, not always on (user decision) |
 | LLM | External API calls acceptable for interpretation; storage stays local (user decision) |
+| Volume | **30–50 items/month** (user estimate, 2026-08-23). Deliberately *not* measured further — he wants to start. |
 | Serial numbers | Dropped — user confirmed indifference to writing a number on the paper (2026-08-22) |
+| Adversarial review (v6 delta) | **Waived — recalibration, not a design decision** (volume figure + dropped measurement gate). The v5 review stands for everything else. |
 | Adversarial review | `REVISE` → resolved by **deletion**, see below · reviewer: **same-model-fallback** (no `reviewer_model` configured — the review carries the same blind spots as self-critique to a real degree) |
 
 > ⚠️ **v1 of this concept was built around pre-printed serial-number labels. That is now deleted.**
@@ -36,26 +38,32 @@ join in.
 
 ### The denominators — four, not one
 
-An earlier version of this concept used a single denominator (~300 documents/year) and let it
-justify the whole design. That was the wrong measurement. Documents/year decides almost nothing
-here. **Four separate numbers each govern a different component, and they point in different
-directions:**
+An earlier version used a single denominator and let it justify the whole design. That was the wrong
+measurement: documents/year decides almost nothing here. **Four separate numbers govern four
+different components, and they point in different directions.**
+
+**Planning figure: 30–50 items/month ≈ 360–600/year.** The user's own estimate, and he has explicitly
+declined to measure it more precisely — he wants to start. That is the right call: nothing below
+changes *shape* at 300 versus 600, only the budgets move, and the one decision the number could have
+flipped — whether a DMS is worth it at all — is settled decisively in favour by this figure. ⚠️ One
+caveat, recorded so the number stays traceable rather than re-litigated later: if a chunk of that
+30–50 turns out to be advertising and throwaways, the cost row below falls accordingly. No design
+changes, only the budget.
 
 | Denominator | Estimate | What it governs |
 |---|---|---|
-| **Capture-seconds/year** — the only *recurring cost* | Phone-only: ~300 captures × 45–90 s, multi-page items 3–5 min ≈ **6–12 h/year, forever**. **With the flatbed absorbing multi-page items, realistically 3–6 h/year** (see Principle 8) | Every second added to the per-letter ritual is multiplied by 300. This is the budget the design must protect above all else. |
-| **Physical pulls/year** — how often anyone removes an actual sheet | Belegeinsicht 0–1 per property, insurance/warranty case 0–2, Finanzamt query 0–1 ⇒ **~2–6/year** | Any scheme for *addressing a physical sheet*. At this rate, a serial number cannot pay for itself. |
-| **Digital lookups/year** | tax season + ad-hoc ⇒ **~30–60/year** | The OCR + full-text index. Clearly worth software. |
-| **Deadlines missed/year, today** | **unknown — the user has never counted** | Whether an action-tracking stage should exist at all. If it is 0–1, building it is waste. |
+| **Capture-seconds/year** — the only *recurring cost* | ~360–600 captures. Phone-only that would be **10–20 h/year, forever**; **with the flatbed absorbing multi-page items, realistically 5–10 h/year** — roughly **25–50 minutes a month**, split across two adults (Principle 8) | Every second added to the per-letter ritual is multiplied by ~500. The budget the design must protect above all else — and at this volume it matters more, not less. |
+| **Physical pulls/year** — how often anyone removes an actual sheet | Belegeinsicht 0–1 per property, insurance/warranty case 0–2, Finanzamt query 0–1 ⇒ **~2–6/year**. **Event-driven — it does not scale with volume** | Any scheme for *addressing a physical sheet*. At this rate a serial number still cannot pay for itself; doubling the volume does not rescue it. |
+| **Digital lookups/year** | tax season + ad-hoc ⇒ **~30–60/year** | The OCR + full-text index. Clearly worth software, and more so at 600 documents than at 300. |
+| **Deadlines missed/year, today** | **unknown — never counted** | Whether Stage 3 should exist. Still open, but it gates only Stage 3 and blocks nothing now. |
 
-Note the split the raw "20–30 letters/month" figure hides: *mail received* is realistically 40–60
-per month once advertising and throwaways are counted, while *documents worth capturing* is more
-like 8–15. Cost scales with the first if the rule is "photograph everything"; benefit scales with
-the second.
-
-⚠️ **Two of these must be measured before building.** Count one real month of *capture-worthy* post,
-and count how many deadlines were actually missed in the last year. The second number alone decides
-whether Stage 3 exists.
+⚠️ **What gets worse at this volume, stated plainly:** roughly 800–1,200 sheets a year means about
+**two archive binders per year**, not one — so acceptance criterion 5 ("binder count stays low") is
+under more pressure than earlier versions assumed. It does not break: the retention table gives most
+ordinary receipts a floor of 4–7 years, so binders start retiring from around year five and the count
+should settle near 8–14 rather than growing without limit. But shelf space needs planning for, and
+the first binder fills in roughly six months rather than twelve. *(Sheets-per-binder is an estimate,
+not a sourced figure.)*
 
 ---
 
@@ -281,7 +289,7 @@ So the capture design splits by document shape, not by preference:
 
 Two consequences worth stating:
 
-- **The backlog stops being a project.** 60–100 documents through a sheet feeder is an afternoon,
+- **The backlog stops being a project.** ~90–150 documents through a sheet feeder is an afternoon,
   not a campaign — and it is the highest-quality data the archive will ever get.
 - **`PAPERLESS_OCR_MODE=redo` matters only for the phone path.** A flatbed producing image-only PDFs
   gets OCR'd by paperless normally; MakeACopy's on-device text layer is what `redo` overrides.
@@ -323,7 +331,7 @@ label it `2026-01 … 2026-08`, cellar, next binder"*). Altbestand is simply the
 first.
 
 ⚠️ v4 told you to sort the pile by document date first, calling it *"one pass, costs nothing extra"*.
-**Deleted.** Sorting 60–100 items by hand is 30–60 minutes; multi-page items must be clipped first or
+**Deleted.** Sorting ~90–150 items by hand is the better part of an hour; multi-page items must be clipped first or
 they interleave and destroy the scan order; many sheets carry no unambiguous date at all (a
 Kontoauszug carries a period, an invoice carries three candidate dates). The payoff would be ~15
 seconds of flipping in a binder you open perhaps once a year.
@@ -472,11 +480,10 @@ filters load-bearing, that is an accepted risk, not a covered one.
 
 | Stage | Scope | Done when |
 |---|---|---|
-| **Measure** (before anything) | Count one month of capture-worthy post. Count deadlines missed in the last year. | Two numbers exist. If capture-worthy post is under ~10/month, the honest recommendation shrinks to a folder of PDFs and no DMS at all. |
 | **0 — Capture** (one evening) | Month dividers in a binder; flatbed → `consume/` (scan-to-folder if available); MakeACopy + Syncthing-Fork + doze exemption for the phone path; paperless via SQLite compose with the settings table above; backup target | Both paths land a searchable document, and the monthly reconciliation check works |
 | **1 — Backlog & routine** | **Run the 3-month pile through the flatbed in one afternoon**, in whatever order it is already in, into binder zero `Altbestand bis 2026-08` (Answer 1) — highest-quality input the archive will get; start the running archive *empty*; establish the two trays + Betriebskosten sleeves; tags per property | The pile is gone, the running archive starts clean at month one, and the tray is the only paper without a decision |
 | **2 — Suggestions** | Switch on core AI (`openai-like` → Anthropic). Spot-check ~20 documents. | Correspondent/type suggestions are right often enough to accept blind |
-| **3 — Actions** — ⚠️ **conditional** | Build **only if** the measured missed-deadline count is ≥3/year. Otherwise: the person who opens the letter puts it in Offen and writes the date in the shared family calendar. | — |
+| **3 — Actions** — ⚠️ **conditional** | Build **only if** the recalled missed-deadline count is ≥3/year. Otherwise: the person who opens the letter puts it in Offen and writes the date in the shared family calendar. | — |
 | **4 — Outlook (do not build)** | Email invoices (paperless has native IMAP mail rules), bank statements, tax agent | only the seam is defined: everything becomes a document with custom fields |
 
 **Old binders: leave them alone** — with one principled exception. Draw a line at the start date and
@@ -489,10 +496,12 @@ retro-digitization of a closed set with a payoff — the house build being the o
 
 ## ⚖️ Trade-offs & Alternatives
 
-**The honest minimum.** Measure first (above). If capture-worthy volume is under ~10/month, the right
-answer is MakeACopy + Syncthing + a dated folder, and no DMS. Paperless is included for exactly one
-increment — OCR + full-text index + a phone-reachable UI — plus one option value: **native IMAP mail
-ingest**, which is the seam to the user's Stage 4.
+**The honest minimum — and why this design exceeds it.** Below roughly 10 capture-worthy items a
+month, the right answer would be MakeACopy + Syncthing + a dated folder, and no DMS at all. **At
+30–50/month that escape hatch is closed**, and the question is settled rather than deferred: at
+~500 documents a year a folder of PDFs stops being findable, which is the whole point. Paperless
+earns its place on exactly one increment — OCR + full-text index + a phone-reachable UI — plus one
+option value: **native IMAP mail ingest**, the seam to Stage 4.
 
 **Decided: paperless-ngx over [Papra](https://github.com/papra-hq/papra).** v1 rejected Papra *for
 lacking ASN*; that reason evaporated with Principle 1, so the call was re-made on its merits. Papra
@@ -545,8 +554,11 @@ months. If semantic recall is ever wanted, paperless' own opt-in LLM index provi
 
 ## 📋 Open Questions
 
-1. **The two measurements** (capture-worthy post/month; deadlines missed last year). Blocking for the
-   scope decision and for whether Stage 3 exists.
+1. **How many deadlines did you actually miss last year?** Not blocking anything now — it gates only
+   Stage 3, and it is a recollection, not a measurement campaign. If the honest answer is 0–1, Stage 3
+   should never be built and the "Offen" tray plus the shared calendar is the whole solution.
+   *(The volume measurement that used to sit here is closed: 30–50/month, by the user's estimate, not
+   to be measured further.)*
 2. **Steuerberater, two independent questions:** (a) do craftsman invoices for the rentals fall under
    § 14b Abs. 1 S. 1 UStG (8 years) rather than the 2-year private rule? (b) does § 147 AO bind this
    household at all, given Vermietung is Überschusseinkünfte and the § 147a threshold is far away?

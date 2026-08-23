@@ -2,7 +2,7 @@
 
 ## 📌 Status
 
-`DRAFT` · v5 (v2 schrieb v1 durch Streichung neu; v3 arbeitete den Flachbett ein; v4 führte ein Framework „abgeschlossene Bände" ein; **v5 streicht dieses Framework wieder**, nachdem eine zweite Gegenprüfung gezeigt hat, dass sein tragender technischer Fakt falsch war und sein eigenes Paradebeispiel seinen eigenen Test nicht besteht)
+`DRAFT` · v6 (v2 schrieb v1 durch Streichung neu; v3 arbeitete den Flachbett ein; v4 führte ein Framework „abgeschlossene Bände" ein und v5 strich es nach einer zweiten Gegenprüfung wieder; **v6 legt die Mengenannahme auf die Schätzung des Nutzers fest und streicht die Mess-Vorstufe — er will loslegen**)
 
 | Feld | Wert |
 |---|---|
@@ -11,7 +11,9 @@
 | Erfassungsgerät | Android **plus vorhandener Flachbettscanner** (Nutzer, 2026-08-22) |
 | Speicherung | Nur lokaler Rechner, nicht dauerhaft an (Nutzerentscheidung) |
 | LLM | API-Aufrufe zur Interpretation akzeptabel; Speicherung bleibt lokal (Nutzerentscheidung) |
+| Menge | **30–50 Stück/Monat** (Schätzung des Nutzers, 2026-08-23). Bewusst *nicht* genauer gemessen — er will loslegen. |
 | Laufende Nummern | Gestrichen — Nutzer hat bestätigt, dass ihm das Beschriften des Papiers gleichgültig ist (2026-08-22) |
+| Gegenprüfung (v6-Delta) | **Verzichtet — Rekalibrierung, keine Designentscheidung** (Mengenangabe + gestrichenes Mess-Gate). Die v5-Prüfung gilt für alles Übrige weiter. |
 | Gegenprüfung | **„Überarbeiten"** → aufgelöst durch **Streichung**, siehe unten · Prüfer: **Same-Model-Fallback** (kein `reviewer_model` konfiguriert — die Prüfung teilt zu einem realen Teil die blinden Flecken der Selbstkritik) |
 
 > ⚠️ **v1 dieses Konzepts war um vorgedruckte Nummern-Etiketten herum gebaut. Das ist jetzt gestrichen.**
@@ -37,26 +39,33 @@ und irgendwann kommen E-Mail-Rechnungen, Kontobewegungen und die Steuererklärun
 
 ### Die Nenner — vier, nicht einer
 
-Eine frühere Fassung dieses Konzepts benutzte einen einzigen Nenner (~300 Dokumente/Jahr) und ließ
-ihn das ganze Design rechtfertigen. Das war die falsche Messgröße. Dokumente pro Jahr entscheiden
-hier fast nichts. **Vier getrennte Zahlen steuern je eine andere Komponente, und sie zeigen in
-verschiedene Richtungen:**
+Eine frühere Fassung benutzte einen einzigen Nenner und ließ ihn das ganze Design rechtfertigen. Das
+war die falsche Messgröße: Dokumente pro Jahr entscheiden hier fast nichts. **Vier getrennte Zahlen
+steuern vier verschiedene Komponenten, und sie zeigen in verschiedene Richtungen.**
+
+**Planungsgröße: 30–50 Stück/Monat ≈ 360–600/Jahr.** Die eigene Schätzung des Nutzers; er hat
+ausdrücklich darauf verzichtet, genauer zu messen — er will loslegen. Das ist die richtige
+Entscheidung: An der *Form* ändert sich zwischen 300 und 600 nichts, nur die Budgets verschieben sich,
+und die eine Entscheidung, die die Zahl hätte kippen können — ob sich ein DMS überhaupt lohnt — fällt
+mit dieser Größenordnung eindeutig dafür aus. ⚠️ Ein Vorbehalt, festgehalten, damit die Zahl
+nachvollziehbar bleibt statt später neu aufgerollt zu werden: Falls ein Teil dieser 30–50 sich als
+Werbung und Wegwerfpost erweist, sinkt die Kostenzeile unten entsprechend. Keine Designänderung, nur
+das Budget.
 
 | Nenner | Schätzung | Was er steuert |
 |---|---|---|
-| **Erfassungs-Sekunden/Jahr** — die einzigen *laufenden Kosten* | Nur Handy: ~300 Erfassungen × 45–90 s, mehrseitige Sachen 3–5 min ≈ **6–12 h/Jahr, dauerhaft**. **Wenn der Flachbett die mehrseitigen Sachen übernimmt, realistisch 3–6 h/Jahr** (siehe Prinzip 8) | Jede Sekunde, die das Ritual pro Brief länger macht, wird mit 300 multipliziert. Dieses Budget muss das Design vor allem anderen schützen. |
-| **Physische Zugriffe/Jahr** — wie oft überhaupt jemand ein echtes Blatt herauszieht | Belegeinsicht 0–1 pro Wohnung, Versicherungs-/Garantiefall 0–2, Finanzamt-Nachfrage 0–1 ⇒ **~2–6/Jahr** | Jedes Schema zum *Adressieren eines physischen Blatts*. Bei dieser Rate kann sich eine laufende Nummer nicht rechnen. |
-| **Digitale Abfragen/Jahr** | Steuerzeit + spontan ⇒ **~30–60/Jahr** | Den OCR- und Volltextindex. Eindeutig Software wert. |
-| **Verpasste Fristen/Jahr, heute** | **unbekannt — nie gezählt** | Ob es eine Aktionsverfolgung überhaupt geben sollte. Bei 0–1 ist der Bau Verschwendung. |
+| **Erfassungs-Sekunden/Jahr** — die einzigen *laufenden Kosten* | ~360–600 Erfassungen. Nur mit Handy wären das **10–20 h/Jahr, dauerhaft**; **mit dem Flachbett für die mehrseitigen Sachen realistisch 5–10 h/Jahr** — grob **25–50 Minuten im Monat**, auf zwei Erwachsene verteilt (Prinzip 8) | Jede Sekunde mehr im Ritual pro Brief wird mit ~500 multipliziert. Das Budget, das das Design vor allem anderen schützen muss — bei dieser Menge mehr denn je. |
+| **Physische Zugriffe/Jahr** — wie oft überhaupt jemand ein echtes Blatt herauszieht | Belegeinsicht 0–1 pro Wohnung, Versicherungs-/Garantiefall 0–2, Finanzamt-Nachfrage 0–1 ⇒ **~2–6/Jahr**. **Ereignisgetrieben — skaliert nicht mit der Menge** | Jedes Schema zum *Adressieren eines physischen Blatts*. Bei dieser Rate rechnet sich eine laufende Nummer weiterhin nicht; die doppelte Menge rettet sie nicht. |
+| **Digitale Abfragen/Jahr** | Steuerzeit + spontan ⇒ **~30–60/Jahr** | Den OCR- und Volltextindex. Eindeutig Software wert — bei 600 Dokumenten mehr als bei 300. |
+| **Verpasste Fristen/Jahr, heute** | **unbekannt — nie gezählt** | Ob Stufe 3 existieren soll. Weiterhin offen, blockiert aber nur Stufe 3 und sonst nichts. |
 
-Man beachte die Aufspaltung, die die rohe Zahl „20–30 Briefe/Monat" verdeckt: *empfangene Post* sind
-realistisch 40–60 pro Monat, sobald Werbung und Wurfsendungen mitgezählt werden, während
-*erfassungswürdige Dokumente* eher bei 8–15 liegen. Die Kosten skalieren mit der ersten Zahl, wenn
-die Regel „alles fotografieren" lautet; der Nutzen skaliert mit der zweiten.
-
-⚠️ **Zwei davon müssen vor dem Bauen gemessen werden.** Zähle einen echten Monat *erfassungswürdiger*
-Post, und zähle, wie viele Fristen im letzten Jahr tatsächlich verpasst wurden. Allein die zweite Zahl
-entscheidet, ob Stufe 3 existiert.
+⚠️ **Was bei dieser Menge schlechter wird, klar benannt:** Grob 800–1.200 Blatt im Jahr bedeuten etwa
+**zwei Archivordner pro Jahr**, nicht einen — Akzeptanzkriterium 5 („Ordnerzahl bleibt niedrig") steht
+also stärker unter Druck als in früheren Fassungen angenommen. Es bricht nicht: Die
+Aufbewahrungstabelle gibt den meisten gewöhnlichen Belegen eine Untergrenze von 4–7 Jahren, ab etwa
+Jahr fünf gehen also Ordner in Rente und die Zahl sollte sich bei 8–14 einpendeln statt unbegrenzt zu
+wachsen. Aber der Regalplatz will eingeplant sein, und der erste Ordner ist nach etwa sechs Monaten
+voll, nicht nach zwölf. *(Blatt pro Ordner ist eine Schätzung, keine belegte Zahl.)*
 
 ---
 
@@ -298,7 +307,7 @@ Die Erfassung teilt sich also nach Dokumentform auf, nicht nach Vorliebe:
 
 Zwei Folgen sind erwähnenswert:
 
-- **Der Rückstand hört auf, ein Projekt zu sein.** 60–100 Dokumente durch einen Einzug sind ein
+- **Der Rückstand hört auf, ein Projekt zu sein.** ~90–150 Dokumente durch einen Einzug sind ein
   Nachmittag, keine Kampagne — und es sind die besten Daten, die das Archiv je bekommen wird.
 - **`PAPERLESS_OCR_MODE=redo` ist nur für den Handy-Pfad relevant.** Ein Flachbett, der reine
   Bild-PDFs liefert, wird von Paperless normal OCR-verarbeitet; `redo` überschreibt die
@@ -343,7 +352,7 @@ Das ist kein neues Schema — Prinzip 1 beschriftet einen vollen Ordner ohnehin 
 ist schlicht der Band davor.
 
 ⚠️ v4 hat dir geraten, den Stapel vorher nach Dokumentdatum zu sortieren — *„ein Durchgang, kostet
-nichts extra"*. **Gestrichen.** 60–100 Positionen von Hand zu sortieren sind 30–60 Minuten;
+nichts extra"*. **Gestrichen.** ~90–150 Positionen von Hand zu sortieren ist gut eine Stunde;
 mehrseitige Dokumente müssen vorher geklammert werden, sonst verschachteln sie sich und zerstören die
 Scan-Reihenfolge; und viele Blätter tragen gar kein eindeutiges Datum (ein Kontoauszug trägt einen
 Zeitraum, eine Rechnung drei Datumskandidaten). Der Ertrag wären ~15 Sekunden Blättern in einem
@@ -499,11 +508,10 @@ Da Prinzip 3 gespeicherte Filter tragend macht, ist das ein akzeptiertes, kein a
 
 | Stufe | Umfang | Fertig, wenn |
 |---|---|---|
-| **Messen** (vor allem anderen) | Einen Monat erfassungswürdige Post zählen. Verpasste Fristen des letzten Jahres zählen. | Zwei Zahlen existieren. Liegt die erfassungswürdige Post unter ~10/Monat, schrumpft die ehrliche Empfehlung auf einen Ordner mit PDFs und gar kein DMS. |
 | **0 — Erfassung** (ein Abend) | Monatstrenner in einen Ordner; Flachbett → `consume/` (Scan-to-Folder, falls möglich); MakeACopy + Syncthing-Fork + Doze-Ausnahme für den Handy-Pfad; Paperless per SQLite-Compose mit der Einstellungstabelle oben; Backup-Ziel | Beide Pfade liefern ein durchsuchbares Dokument, und die monatliche Abgleichung funktioniert |
 | **1 — Rückstand & Routine** | **Den 3-Monats-Stapel an einem Nachmittag durch den Flachbett jagen**, in der Reihenfolge, in der er ohnehin liegt — in Band null `Altbestand bis 2026-08` (Antwort 1); das beste Eingangsmaterial, das das Archiv je bekommt; das laufende Archiv *leer* starten; die zwei Ablagen + Betriebskosten-Hüllen einrichten; Tags pro Objekt | Der Stapel ist weg, das laufende Archiv startet sauber bei Monat eins, und die Ablage „Offen" ist das einzige Papier ohne Entscheidung |
 | **2 — Vorschläge** | Kern-KI einschalten (`openai-like` → Anthropic). ~20 Dokumente stichprobenartig prüfen. | Korrespondenten-/Typvorschläge stimmen oft genug, um sie blind zu akzeptieren |
-| **3 — Aktionen** — ⚠️ **konditional** | **Nur bauen, wenn** die gemessene Zahl verpasster Fristen ≥3/Jahr beträgt. Sonst: Wer den Brief öffnet, legt ihn in „Offen" und trägt das Datum in den Familienkalender ein. | — |
+| **3 — Aktionen** — ⚠️ **konditional** | **Nur bauen, wenn** die erinnerte Zahl verpasster Fristen ≥3/Jahr beträgt. Sonst: Wer den Brief öffnet, legt ihn in „Offen" und trägt das Datum in den Familienkalender ein. | — |
 | **4 — Ausblick (nicht bauen)** | E-Mail-Rechnungen (Paperless hat native IMAP-Mail-Regeln), Kontoauszüge, Steuer-Agent | nur die Naht wird definiert: alles wird ein Dokument mit Custom Fields |
 
 **Alte Ordner: in Ruhe lassen** — mit einer prinzipiellen Ausnahme. Einen Schnitt zum Startdatum ziehen
@@ -517,10 +525,13 @@ zurück" als Vollständigkeitsziel.
 
 ## ⚖️ Abwägungen & Alternativen
 
-**Das ehrliche Minimum.** Erst messen (siehe oben). Liegt das erfassungswürdige Volumen unter
-~10/Monat, ist die richtige Antwort MakeACopy + Syncthing + ein datierter Ordner, und kein DMS.
-Paperless ist genau für einen Zugewinn dabei — OCR + Volltextindex + eine vom Handy erreichbare UI —
-plus einen Optionswert: **nativer IMAP-Mail-Import**, die Naht zu Stufe 4 des Nutzers.
+**Das ehrliche Minimum — und warum dieses Design darüber hinausgeht.** Unter grob 10
+erfassungswürdigen Stück im Monat wäre die richtige Antwort MakeACopy + Syncthing + ein datierter
+Ordner, und gar kein DMS. **Bei 30–50/Monat ist dieser Ausweg zu**, und die Frage ist entschieden
+statt vertagt: Bei ~500 Dokumenten im Jahr hört ein Ordner voller PDFs auf, auffindbar zu sein — und
+genau darum geht es. Paperless verdient sich seinen Platz mit genau einem Zugewinn — OCR +
+Volltextindex + eine vom Handy erreichbare UI — plus einem Optionswert: **nativer IMAP-Mail-Import**,
+die Naht zu Stufe 4.
 
 **Entschieden: paperless-ngx statt [Papra](https://github.com/papra-hq/papra).** v1 hatte Papra
 *wegen fehlender ASN* abgelehnt; dieser Grund ist mit Prinzip 1 entfallen, also wurde die Wahl neu
@@ -576,8 +587,11 @@ eigener optionaler LLM-Index sie.
 
 ## 📋 Offene Fragen
 
-1. **Die zwei Messungen** (erfassungswürdige Post/Monat; verpasste Fristen im letzten Jahr). Blockierend
-   für die Umfangsentscheidung und dafür, ob Stufe 3 existiert.
+1. **Wie viele Fristen hast du letztes Jahr tatsächlich verpasst?** Blockiert jetzt nichts mehr — es
+   entscheidet nur über Stufe 3, und es ist eine Erinnerung, keine Messkampagne. Lautet die ehrliche
+   Antwort 0–1, sollte Stufe 3 nie gebaut werden und die Ablage „Offen" plus der gemeinsame Kalender
+   sind die ganze Lösung. *(Die Mengenmessung, die hier stand, ist erledigt: 30–50/Monat nach
+   Schätzung des Nutzers, wird nicht weiter gemessen.)*
 2. **Steuerberater, zwei unabhängige Fragen:** (a) Fallen Handwerkerrechnungen für die Mietobjekte unter
    § 14b Abs. 1 S. 1 UStG (8 Jahre) statt unter die 2-Jahres-Regel für Private? (b) Bindet § 147 AO
    diesen Haushalt überhaupt, da Vermietung Überschusseinkünfte sind und die Schwelle des § 147a AO
