@@ -11,7 +11,7 @@
 
 | | |
 |---|---|
-| Ausgangslage | Buchgestalterin, 10 Std./Woche angestellt in einem Kinderbuchverlag in München. Kein Gesundheitsberuf. |
+| Ausgangslage | Buchgestalterin, 10 Std./Woche angestellt in einem Kinderbuchverlag in München (~1.000 € brutto/Monat). Kein Gesundheitsberuf. |
 | Familie | Ehemann Ingenieur (~140k brutto), zwei Kinder (7 und 3), alle gesetzlich versichert (BMW BKK). |
 | Zeitfenster | Mo, Mi, Do, Fr vormittags. Dienstag und alle Abende sind Familienzeit — feste Randbedingung. |
 
@@ -23,15 +23,19 @@
 
 Der gedachte Plan lautet *Ausbildung → Berechtigung → Kunden → Einkommen*. Der Haken: **es gibt keine „Berechtigung".** Das Zertifikat ist keine Heilkundeerlaubnis, kein geschützter Titel, keine Kassenzulassung und nicht förderfähig. Es bleibt reine Selbstzahler-Nachfrage.
 
-> **Der beste erreichbare Zustand ist ein Zuverdienst von rund 7.000–10.000 € Umsatz im Jahr neben der Anstellung.** Das ist kein Trostpreis, sondern der ökonomisch beste Punkt des ganzen Konzepts. Den Job zu kündigen, um mehr Termine zu geben, macht die Familie **pro Arbeitsstunde ärmer**, nicht reicher.
+> **Der beste erreichbare Zustand ist ein Zuverdienst von rund 10.000–14.000 € Umsatz im Jahr neben der Anstellung — nach allen Abzügen ~4.100–6.000 € netto.** Das ist kein Trostpreis, sondern der ökonomisch beste Punkt des ganzen Konzepts. Den Job zu kündigen, um mehr Termine zu geben, macht die Familie **pro Arbeitsstunde ärmer**, nicht reicher.
 
-### Fünf Dinge, alles andere ist Begründung
+### Sieben Dinge, alles andere ist Begründung
 
-1. **Den Job nicht kündigen** — aus einem Rechengrund, nicht nur zur Absicherung (siehe unten).
-2. **DRV-Meldung binnen 3 Monaten** nach Aufnahme der Selbständigkeit (§ 190a SGB VI). Der einzige praktisch nicht umkehrbare Fehler.
-3. **Anwaltliche Erstberatung** (~250–400 €) vor der ersten Zeile auf der Website. Das Heilkunderecht ist hier eng, und schon die Werbung kann eine Abmahnung auslösen.
-4. **Vor jedem Kauf: 20 Gespräche.** Die entscheidende Frage ist nicht „würdest du zahlen?", sondern **„könntest du an einem Mittwoch um 10 Uhr?"**
-5. **Der Kurs ist ein Test der eigenen Präferenz, kein Geschäftsinvestment.** Dank § 5 FernUSG (Kündigungsrecht zum Ende des ersten Halbjahres) lautet die Verpflichtung nicht „1.720 € jetzt", sondern **„im Monat 4–5 nochmal entscheiden"**.
+1. **Den Job nicht kündigen.** Er hält die Krankenversicherung der Selbständigkeit bei **0 €** (§ 226 SGB V). Ohne ihn beginnt sie bei ~3.200 €/Jahr, auch bei null Umsatz.
+2. **Die Rentenversicherung einplanen.** Die Tätigkeit ist rentenversicherungspflichtig (dazu unten). Das kostet 18,6 % vom Gewinn und senkt den besten Fall auf ~4.100 € netto. Kein reiner Verlust — es erhält den Erwerbsminderungsschutz —, aber es muss in die Rechnung.
+3. **Zustand A ist das Ziel, nicht eine Zwischenstufe.** Mehr als ~3 Termine/Woche sprengen entweder das Zeitfenster oder lösen einen Beitragssprung aus, der den Mehrverdienst auffrisst.
+4. **Das Gewerbe erst anmelden, wenn die erste zahlende Kundin einen Termin hat** — nicht früher.
+5. **DRV-Meldung binnen 3 Monaten** nach Aufnahme der Selbständigkeit (§ 190a SGB VI). Der einzige praktisch nicht umkehrbare Fehler.
+6. **Anwaltliche Erstberatung** (~250–400 €) vor der ersten Zeile auf der Website. Das Heilkunderecht ist hier eng, und schon die Werbung kann eine Abmahnung auslösen.
+7. **Vor jedem Kauf: 20 Gespräche.** Die entscheidende Frage ist nicht „würdest du zahlen?", sondern **„könntest du an einem Mittwoch um 10 Uhr?"**
+
+Und: **Der Kurs ist ein Test der eigenen Präferenz, kein Geschäftsinvestment.** Dank § 5 FernUSG (Kündigungsrecht zum Ende des ersten Halbjahres) lautet die Verpflichtung nicht „1.720 € jetzt", sondern **„im Monat 4–5 nochmal entscheiden"**.
 
 ---
 
@@ -43,9 +47,11 @@ Der bestehende 10-Std.-Job liegt in denselben Vormittagen und findet in München
 |---|---|---|
 | Fenster (4 × 5,5 h) | 22 h | 22 h |
 | − Job inkl. Pendeln München | −14 h | 0 |
-| − unbezahlt (Akquise, Buchhaltung, Material, Nachbereitung) — kann nicht in den Abend ausweichen | −3 h | −6 h |
+| − unbezahlt (Akquise, Buchhaltung, Material, Nachbereitung) | −3 h | −6 h |
 | **= abrechenbar** | **≈ 5 h** | **≈ 16 h** |
 | **= Termine à 90 Min + Puffer** | **2–3 / Woche** | **8 / Woche** |
+
+> ⚠️ Die Zeile „−14 h" ist unsicher: Je nachdem, ob die 10 Job-Stunden auf zwei oder vier Vormittage verteilt sind, bleiben **3 Termine oder nur 1–2**. Das ist die wichtigste offene Frage und in einem Gespräch mit dem Verlag klärbar.
 
 **Arbeitswochen, nicht 48:** Bayern hat ~14 Wochen Schulferien (allein 6 Wochen Sommer). Realistisch **34–36 Wochen im Jahr**. Der neue Rechtsanspruch auf Ganztagsbetreuung (ab August 2026, aufwachsend nach Klassenstufe) kann den Ferienengpass entschärfen — ob der 7-Jährige schon darunterfällt, klärt das Landratsamt in zehn Minuten.
 
@@ -56,15 +62,27 @@ Der bestehende 10-Std.-Job liegt in denselben Vormittagen und findet in München
 | Termine/Woche × 35 Wochen × 100 € | 3 → **10.500 €** Umsatz | 8 → **28.000 €** Umsatz |
 | − Betriebskosten | −2.500 € | −6.000 € |
 | = Gewinn | 8.000 € | 22.000 € |
-| Krankenversicherung | **0 €** (beitragsfrei über Familienversicherung, § 226 SGB V) | −4.456 € (hauptberuflich → freiwillige GKV) |
-| Einkommensteuer (~36–37 %) | −2.880 € | −6.491 € |
-| **= netto** | **≈ 5.120 €** | **≈ 11.050 €** |
-| Zusätzlich verloren bei Kündigung | — | Job-Netto ~6.000 € · Arbeitslosen-Anwartschaft · Erwerbsminderungsschutz · Kinderkrankengeld |
-| **= tatsächlicher Zugewinn** | — | **≈ 5.000 €** für ~16 Std./Woche mehr Arbeit |
+| Krankenversicherung | **0 €** (die Anstellung trägt die Beiträge, § 226 SGB V) | −4.456 € (hauptberuflich → freiwillige GKV) |
+| Rentenversicherung (18,6 %) | −1.488 € | −4.092 € |
+| Einkommensteuer (~37 %) | −2.409 € | −4.977 € |
+| **= netto** | **≈ 4.100 €** | **≈ 8.475 €** |
+| Zusätzlich verloren bei Kündigung | — | Job-Netto ~6.000 € · Arbeitslosen-Anwartschaft · Kinderkrankengeld |
+| **= tatsächlicher Zugewinn** | — | **≈ 2.500 €** für ~16 Std./Woche mehr Arbeit |
 
-> **Das ist das Kernergebnis.** Der Sprung von 3 auf 8 Termine kostet die Anstellung, die Beitragsfreiheit in der Krankenversicherung und vier Absicherungen — und bringt am Ende nur rund 5.000 € mehr netto für den dreifachen Zeiteinsatz. Nicht die Idee scheitert, sondern die Skalierung.
+> **Das ist das Kernergebnis.** Der Sprung von 3 auf 8 Termine kostet die Anstellung, die Beitragsfreiheit in der Krankenversicherung und drei Absicherungen — und bringt am Ende nur rund 2.500 € mehr netto für den dreifachen Zeiteinsatz. Nicht die Idee scheitert, sondern die Skalierung.
 >
-> Bei **150 €/Termin** sähe Variante B besser aus (~17.800 € netto). Aber dann kommt ab 25.000 € Umsatz die Umsatzsteuer dazu, und 150 € gegen eine Heilpraktikerin 1,5 km entfernt durchzusetzen ist die eigentliche Hürde.
+> Und B ist hier noch zu gut gerechnet: Bei 28.000 € Umsatz greift ab dem Folgejahr die **Umsatzsteuer** (Kleinunternehmergrenze 25.000 €). Im Privatkundengeschäft sind das ~16 % Margenverlust ≈ 4.470 € — damit wird der „Zugewinn" von B **negativ**. Bei 150 €/Termin gilt dasselbe früher.
+
+### Ab wie vielen Terminen lohnt es sich?
+
+| | Job behalten | Job gekündigt |
+|---|---|---|
+| **Schwarze Null** (die Tätigkeit trägt ihre eigenen Kosten) | unter 1 Termin/Woche | ~1,6 Termine/Woche |
+| **So viel wie das heutige Verlagsgehalt** (~6.000 €/Jahr netto) | entfällt — das Gehalt läuft weiter, alles ist Zusatz | ~6 Termine/Woche |
+
+> **Die Klippe dazwischen:** Um über 3 Termine hinauszukommen, muss der Job reduziert werden. Genau dann kann die Krankenkasse die Selbständigkeit als „hauptberuflich" einstufen — und dann zählen Gehalt *und* Gewinn für den Beitrag: bis ~5.500 €/Jahr, vorher 0 €. Der Bereich 4–6 Termine/Woche ist damit die **schlechteste Zone** — mehr Arbeit, aber der Beitragssprung frisst den Mehrverdienst.
+>
+> Ein höherer Preis (150 € statt 100 €) ist attraktiver als mehr Termine, aber nicht ungefährlich: Bei 150 € liegt der Gewinn über dem Gehalt, was dieselbe „hauptberuflich"-Einstufung auslösen kann. Deshalb steht die Preisfrage weiter unten bei den offenen Punkten, nicht in der Empfehlung.
 
 ### Wer ist vormittags wirklich da?
 
@@ -73,8 +91,6 @@ Der bestehende 10-Std.-Job liegt in denselben Vormittagen und findet in München
 | **Mütter mit Kind < 3** | Weniger als gedacht. In Bayern sind 67 % erwerbstätig, davon 80 % Teilzeit an den Kita-Zeiten — also genau am Vormittag gebunden. Dazu: Rückbildung und Zyklusberatung nach der Geburt sind bei Hebammen **Kassenleistung** — der stärkste Gratis-Wettbewerb im ganzen Konzept. |
 | **Frauen 45–58 (Wechseljahre)** | Besser als gedacht. ~25–35 % der Beschäftigten arbeiten zumindest teilweise im Homeoffice; an diesen Tagen sind sie in Dachau und haben das meiste Geld. |
 | **Frauen 60+** | Unterschätzt. Im Landkreis Dachau wächst nur die Gruppe 65+ (+30,8 % bis 2044), Kaufkraftindex 118. Vormittags verfügbar, zahlen privat. Themen: Postmenopause, Beckenboden, Schlaf, Knochen. |
-
-> Für die **~10 Stammkundinnen**, die Zustand A braucht, reicht das Vormittagsfenster allemal.
 
 ---
 
@@ -100,6 +116,8 @@ Dazu: Sie ist keine Berufsgeheimnisträgerin, deshalb braucht jede Verarbeitung 
 
 **Ehrlich dagegengehalten:** Es gibt kein veröffentlichtes Urteil gegen eine Frauengesundheits-Coachin; alle belastenden Fälle stammen aus Nachbarbereichen. Es gibt aktive Zyklusbegleiterinnen ohne Erlaubnis — aber keinen Beleg, dass eine davon davon lebt. Das eigentliche Risiko ist nicht die Abmahnung, sondern dass die *rechtssichere* Variante den Kaufgrund verwässert.
 
+> **Ein bitterer Zusammenhang:** Weil sie nur Wissen vermitteln darf und nicht anwenden, ist sie beitragsrechtlich eine **Lehrerin** — und damit rentenversicherungspflichtig. Die rechtssichere Form des Angebots ist zugleich die teurere.
+
 ---
 
 ## Die drei Kassenkanäle sind zu
@@ -112,9 +130,16 @@ Dazu: Sie ist keine Berufsgeheimnisträgerin, deshalb braucht jede Verarbeitung 
 
 ## Die Kanäle
 
-### 1:1-Beratung in Dachau — der realistische Kern
+### 1:1-Beratung in Dachau — der realistische Kern, aber ein Vertriebsproblem
 
-Zustand A braucht **~10 Stammkundinnen**. In einem Landkreis mit 154.000 Einwohnern und Kaufkraftindex 118 ist das eine Zahl, die aus Kita-Umfeld, Freundeskreis und drei Vorträgen entstehen kann. Das ist die belastbarste Aussage des Konzepts — und bescheiden genug, um zu stimmen.
+Zustand A sind ~105 Sitzungen im Jahr. Wie viele Kundinnen das sind, hängt daran, wie oft eine Kundin wiederkommt:
+
+| Sitzungen je Kundin | benötigte **neue** Kundinnen pro Jahr |
+|---|---|
+| 10 (faktisch ein Abo) | 10 |
+| 3–6 (realistisch für Selbstzahler-Beratung) | **18–35** |
+
+Das heißt: **laufend eine neue Kundin alle 1–2 Wochen gewinnen, dauerhaft, ohne bezahlte Werbung.** Nicht die Vormittagsstunden sind der Engpass, sondern der ständige Nachschub. Ob das aus Kita-Umfeld, Freundeskreis und ein paar Vorträgen trägt, weiß niemand vor Schritt 1.
 
 ### Schulworkshops — der Markt ist schon besetzt
 
@@ -156,27 +181,31 @@ Prüfung beim Gesundheitsamt, ~700–1.000 € je Durchgang, Bestehensgrenze 75 
 2. MFM-Projekt / Erzdiözese München-Freising: Konditionen der Multiplikatorinnenausbildung.
 3. Landratsamt: Fällt unser 7-Jähriger unter den Ganztags-Rechtsanspruch? Ferienbetreuung?
 4. Die Bekannte mit dem Studio: Ist der Raum **vormittags** überhaupt frei?
+5. Der Verlag: Wie liegen die 10 Arbeitsstunden im Wochenplan — zwei Tage oder vier?
 
 > **Abbruchkriterium:** Nennt niemand eine konkrete Ausgabe der letzten zwölf Monate in dieser Größenordnung, ist auch Zustand A fraglich. Das kostet dann 0 € statt vier Jahre.
 
-### Schritt 2 — Monat 2–11 · ~1.540 € netto · Job behalten
+### Schritt 2 — Monat 2–11 · ~1.084 € netto · Job behalten
 
-Ausbildung berufsbegleitend, als Präferenztest. Die Kosten sind dank der abgeschlossenen Erstausbildung voll als vorweggenommene Betriebsausgaben abziehbar (~860 € Steuerersparnis). Parallel, weil es fast nichts kostet:
+Ausbildung berufsbegleitend, als Präferenztest. Die Kosten sind dank der abgeschlossenen Erstausbildung voll als vorweggenommene Betriebsausgaben abziehbar (~636 € Steuerersparnis, Nettoaufwand ~1.084 €). Parallel, weil es fast nichts kostet:
 
 - Zwei bis drei **kostenlose Vorträge** — Reaktion messen, E-Mail-Liste aufbauen
 - Anwaltliche Erstberatung Medizin-/Wettbewerbsrecht
-- Schriftliche Anfrage an die BKK: Ab wann gilt die Selbständigkeit neben dem 10-Std.-Job als hauptberuflich? (Die einzige Zahl, die die Planung wirklich braucht.)
+- **Schriftliche Anfrage an die BKK:** Ab welchem Gewinn und Zeitaufwand gilt die Selbständigkeit neben dem 10-Std.-Job als hauptberuflich? Bleibt der Gewinn bis dahin beitragsfrei?
+- **Schriftliche Anfrage an die Deutsche Rentenversicherung:** Gilt eine reine Wissensvermittlung (Zyklus, Ernährung, Lebensstil) als Lehrtätigkeit? Davon hängen 18,6 % des Gewinns ab.
 - Zwei bis drei Berufshaftpflicht-Versicherer anfragen: Besteht Deckung, wenn die Heilkunde-Grenze streitig wird?
 
 ### Schritt 3 — Monat 12–18 · Zustand A
 
-Kleingewerbe anmelden. **DRV-Meldung binnen 3 Monaten.** Berufsgenossenschaft binnen 1 Woche. Berufshaftpflicht, Verarbeitungsverzeichnis, Kleinunternehmerregelung, schriftliche Raumvereinbarung.
+Kleingewerbe anmelden (erst wenn die erste zahlende Kundin einen Termin hat). **DRV-Meldung binnen 3 Monaten** — mit dem Vordruck des Rentenversicherungsträgers, formlos genügt nicht. Berufsgenossenschaft binnen 1 Woche. Berufshaftpflicht, Verarbeitungsverzeichnis, Kleinunternehmerregelung, schriftliche Raumvereinbarung.
 
-2–3 Termine pro Woche im Vormittagsfenster. Unter der DRV-Geringfügigkeitsgrenze (7.236 € Gewinn) bleibt es rentenversicherungsfrei; sobald Kurse mehr als die Hälfte des Umsatzes ausmachen, entsteht Versicherungspflicht — die zugleich den Erwerbsminderungsschutz erhält.
+2–3 Termine pro Woche im Vormittagsfenster. Zustand A liegt mit 8.000 € Gewinn über der Geringfügigkeitsgrenze (7.236 €) — die Rentenversicherungspflicht greift also, sie erhält zugleich den Erwerbsminderungsschutz.
 
 > **Puffer einplanen:** Bei so wenigen Slots kostet ein krankes Kind drei Termine auf einmal, die nirgends nachzuholen sind. Eine Stornoregel in den AGB ist hier kein Detail.
 >
-> **Gate:** Kehren nach sechs Monaten weniger als **zwei zahlende Kundinnen pro Woche** wieder, trägt auch Zustand A nicht.
+> **Gate nach sechs Monaten:**
+> 1. Kommt mindestens **eine neue zahlende Kundin alle zwei Wochen** hinzu, ohne bezahlte Werbung? Darunter trägt Zustand A nicht.
+> 2. Liegt der Schnitt bei **mindestens 3 Sitzungen je Kundin**? Sonst ist der Akquisebedarf höher als jede realistische Vormittagskapazität.
 
 ### Schritt 4 — nur bei bestandenem Gate
 
@@ -186,15 +215,18 @@ Erst hier stellt sich die Frage nach Heilpraktikerprüfung oder MFM-Ausbildung �
 
 ## Offene Fragen
 
-1. **Fällt der 7-Jährige unter den Ganztags-Rechtsanspruch?** Entscheidet über 5 Ferienwochen — Landratsamt, zehn Minuten.
-2. **Ist der Raum bei der Bekannten vormittags frei?** Ein Massage-/Kosmetikstudio hat vormittags typischerweise eigene Prime Time. Voraussetzung für alles.
-3. **Wie liegen die 10 Job-Stunden im Wochenplan?** Die ganze Kapazitätsrechnung hängt daran.
-4. **Ist ein Preis von 150 € / 90 Min vorstellbar?** Bei 100 € trägt das Fenster keinen Vollerwerb. Eine Persönlichkeits-, keine Marktfrage.
-5. **Passt ein kirchlich getragenes Programm (MFM)** weltanschaulich?
-6. Kirchensteuerpflichtig? (~2,9 Prozentpunkte zusätzliche Grenzbelastung.)
+1. **Wie liegen die 10 Job-Stunden im Wochenplan?** Zwei Fahrten nach München oder vier? Entscheidet, ob Zustand A 3 Termine trägt oder nur 1–2. Ein Gespräch mit dem Verlag.
+2. **Wie oft kommt eine Kundin wieder?** Entscheidet, ob 10 oder 35 neue Kundinnen im Jahr nötig sind. Teil von Schritt 1.
+3. **Wie stufen BKK und Rentenversicherung ein?** Zusammen entscheiden sie über die beiden größten Kostenblöcke: 0 € vs. ~3.200–5.500 € Krankenversicherung und 0 € vs. 18,6 % Rentenversicherung.
+4. **Ist ein Preis von 150 € / 90 Min vorstellbar?** Attraktiver als mehr Termine, aber beitragsrechtlich nicht ungefährlich. Eine Persönlichkeits-, keine Marktfrage.
+5. **Ist der Raum bei der Bekannten vormittags frei?** Ein Massage-/Kosmetikstudio hat vormittags typischerweise eigene Prime Time. Voraussetzung für alles.
+6. **Fällt der 7-Jährige unter den Ganztags-Rechtsanspruch?** Entscheidet über 5 Ferienwochen — Landratsamt, zehn Minuten.
+7. **Passt ein kirchlich getragenes Programm (MFM)** weltanschaulich?
+8. Kirchensteuerpflichtig? (~2,9 Prozentpunkte zusätzliche Grenzbelastung.)
 
 ## Was dieses Dokument nicht kann
 
 - **Null Minuten echter Kundenkontakt.** Jede Aussage zur Zahlungsbereitschaft ist Schreibtischrecherche — deshalb Schritt 1.
-- Die Betriebskosten (2.500 € / 6.000 €) und die Annahme „Teilzeit liegt vormittags" sind geschätzt, nicht belegt.
+- **Die Zahlen haben sich schon zweimal verschoben** — eine frühere Fassung war durchgehend zu pessimistisch, eine spätere durchgehend zu optimistisch, und die aktuelle rechnet dort genauer, wo sie es kann, statt dort, wo die eigentliche Unsicherheit sitzt (der Zahlungsbereitschaft). Die dritte Fassung ist nicht automatisch die richtige.
+- Die Betriebskosten (2.500 € / 6.000 €) sind geschätzt, nicht aufgeschlüsselt.
 - **Rechnet die Tabellen nach, bevor Geld ausgegeben wird.**
