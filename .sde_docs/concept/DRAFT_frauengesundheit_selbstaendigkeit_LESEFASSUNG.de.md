@@ -29,7 +29,7 @@ Der gedachte Plan lautet *Ausbildung → Berechtigung → Kunden → Einkommen*.
 
 1. **Den Job nicht kündigen.** Er hält die Krankenversicherung der Selbständigkeit bei **0 €** (§ 226 SGB V). Ohne ihn beginnt sie bei ~3.200 €/Jahr, auch bei null Umsatz.
 2. **Die Rentenversicherung einplanen.** Die Tätigkeit ist rentenversicherungspflichtig (dazu unten). Das kostet 18,6 % vom Gewinn und senkt den besten Fall auf ~4.100 € netto. Kein reiner Verlust — es erhält den Erwerbsminderungsschutz —, aber es muss in die Rechnung.
-3. **Zustand A ist das Ziel, nicht eine Zwischenstufe.** Mehr als ~3 Termine/Woche sprengen entweder das Zeitfenster oder lösen einen Beitragssprung aus, der den Mehrverdienst auffrisst.
+3. **Zustand A (2–3 Termine) ist das Ziel, nicht eine Zwischenstufe.** Die Grenze bei 3 Terminen ist das Zeitfenster. Wer darüber hinaus will, muss den Job reduzieren — und ab ~5 Terminen kippt die Krankenkassen-Einstufung, der Beitragssprung frisst dann den Mehrverdienst.
 4. **Das Gewerbe erst anmelden, wenn die erste zahlende Kundin einen Termin hat** — nicht früher.
 5. **DRV-Meldung binnen 3 Monaten** nach Aufnahme der Selbständigkeit (§ 190a SGB VI). Der einzige praktisch nicht umkehrbare Fehler.
 6. **Anwaltliche Erstberatung** (~250–400 €) vor der ersten Zeile auf der Website. Das Heilkunderecht ist hier eng, und schon die Werbung kann eine Abmahnung auslösen.
@@ -80,9 +80,29 @@ Der bestehende 10-Std.-Job liegt in denselben Vormittagen und findet in München
 | **Schwarze Null** (die Tätigkeit trägt ihre eigenen Kosten) | unter 1 Termin/Woche | ~1,6 Termine/Woche |
 | **So viel wie das heutige Verlagsgehalt** (~6.000 €/Jahr netto) | entfällt — das Gehalt läuft weiter, alles ist Zusatz | ~6 Termine/Woche |
 
-> **Die Klippe dazwischen:** Um über 3 Termine hinauszukommen, muss der Job reduziert werden. Genau dann kann die Krankenkasse die Selbständigkeit als „hauptberuflich" einstufen — und dann zählen Gehalt *und* Gewinn für den Beitrag: bis ~5.500 €/Jahr, vorher 0 €. Der Bereich 4–6 Termine/Woche ist damit die **schlechteste Zone** — mehr Arbeit, aber der Beitragssprung frisst den Mehrverdienst.
+> **Die Klippe:** Um über 3 Termine hinauszukommen, muss der Job reduziert werden. Der **vierte** Termin ist beitragsrechtlich noch unbedenklich (Gewinn bleibt unter dem Gehalt) — ab **~5 Terminen** kann die Krankenkasse die Selbständigkeit als „hauptberuflich" einstufen, und dann zählen Gehalt *und* Gewinn für den Beitrag: bis ~5.500 €/Jahr, vorher 0 €. Der Bereich **5–6 Termine/Woche** ist damit die schlechteste Zone — mehr Arbeit, aber der Beitragssprung frisst den Mehrverdienst.
 >
 > Ein höherer Preis (150 € statt 100 €) ist attraktiver als mehr Termine, aber nicht ungefährlich: Bei 150 € liegt der Gewinn über dem Gehalt, was dieselbe „hauptberuflich"-Einstufung auslösen kann. Deshalb steht die Preisfrage weiter unten bei den offenen Punkten, nicht in der Empfehlung.
+
+### Elternzeit — die dritte Möglichkeit
+
+Zwischen „Job behalten" und „kündigen" liegt die **Elternzeit**: der Job ruht, ist aber geschützt, und sie kann zurück. Kapazitätsmäßig wie „gekündigt", nur umkehrbar.
+
+> ⚠️ **Elternzeit ist nicht Elterngeld.** Geld gibt es nur in den ersten 14 Lebensmonaten eines Kindes. Bei Kindern von 7 und 3 ist Elternzeit **reiner unbezahlter Urlaub** — 4 Monate kosten ~2.000–2.300 € netto, dazu wird ein Drittel des Jahresurlaubs gekürzt.
+
+Auf ein volles Jahr gerechnet:
+
+| | Job behalten | Elternzeit (volles Fenster) |
+|---|---|---|
+| netto aus der Selbständigkeit | ~4.100 € | ~11.300 € |
+| + Verlagsgehalt | +6.000 € | 0 € |
+| **= für die Familie** | **~10.100 €** | **~11.300 €** |
+
+Der Unterschied ist **~1.200 € für rund 11 Stunden mehr Arbeit pro Woche** — und sobald die Umsatzsteuer greift (ab 25.000 € Umsatz), wird er negativ. Die Krankenversicherung bleibt in der Elternzeit übrigens bei 0 € (sie wird dadurch nicht „hauptberuflich").
+
+Ein **4-Monats-Block** — die konkret gestellte Frage — ist noch schwächer: nach Abzug der Ferien bleiben ~12 nutzbare Arbeitswochen, also selbst bei voller Auslastung nur ein niedriger vierstelliger Netto-Betrag, für einen Zeitraum ganz ohne Gehalt. Und beide Rechnungen unterstellen 8 Termine/Woche in der Elternzeit — schwer vereinbar damit, dass Elternzeit das Kind „selbst betreuen" heißt.
+
+**Fazit:** Elternzeit trägt sich wirtschaftlich nicht — und **jetzt** schon gar nicht, weil die Nachfrage noch nicht belegt ist. Falls sie später doch je ein Thema wird: nur noch für das jüngere Kind (beim Älteren läuft der Anspruch mit dem 8. Geburtstag aus), 13 Wochen Vorlauf, der Verlag muss der Selbständigkeit zustimmen, und **keinen langen Block anmelden** — vorzeitig beenden geht nur mit Zustimmung des Arbeitgebers.
 
 ### Wer ist vormittags wirklich da?
 
@@ -221,12 +241,13 @@ Erst hier stellt sich die Frage nach Heilpraktikerprüfung oder MFM-Ausbildung �
 4. **Ist ein Preis von 150 € / 90 Min vorstellbar?** Attraktiver als mehr Termine, aber beitragsrechtlich nicht ungefährlich. Eine Persönlichkeits-, keine Marktfrage.
 5. **Ist der Raum bei der Bekannten vormittags frei?** Ein Massage-/Kosmetikstudio hat vormittags typischerweise eigene Prime Time. Voraussetzung für alles.
 6. **Fällt der 7-Jährige unter den Ganztags-Rechtsanspruch?** Entscheidet über 5 Ferienwochen — Landratsamt, zehn Minuten.
-7. **Passt ein kirchlich getragenes Programm (MFM)** weltanschaulich?
-8. Kirchensteuerpflichtig? (~2,9 Prozentpunkte zusätzliche Grenzbelastung.)
+7. **Wie viele Elternzeit-Abschnitte sind beim jüngeren Kind schon verbraucht?** Frage an die Personalabteilung des Verlags — nur relevant, falls Elternzeit später doch ein Thema wird.
+8. **Passt ein kirchlich getragenes Programm (MFM)** weltanschaulich?
+9. Kirchensteuerpflichtig? (~2,9 Prozentpunkte zusätzliche Grenzbelastung.)
 
 ## Was dieses Dokument nicht kann
 
 - **Null Minuten echter Kundenkontakt.** Jede Aussage zur Zahlungsbereitschaft ist Schreibtischrecherche — deshalb Schritt 1.
-- **Die Zahlen haben sich schon zweimal verschoben** — eine frühere Fassung war durchgehend zu pessimistisch, eine spätere durchgehend zu optimistisch, und die aktuelle rechnet dort genauer, wo sie es kann, statt dort, wo die eigentliche Unsicherheit sitzt (der Zahlungsbereitschaft). Die dritte Fassung ist nicht automatisch die richtige.
+- **Die Zahlen haben sich mehrfach verschoben** — frühere Fassungen waren durchgehend zu pessimistisch, dann zu optimistisch, dann zu sehr auf die gewünschte Antwort hin gerechnet. Jede wurde unabhängig geprüft und korrigiert. Die aktuelle Fassung rechnet dort genau, wo sie es kann — nicht dort, wo die eigentliche Unsicherheit sitzt (der Zahlungsbereitschaft). Sie ist nicht automatisch die richtige.
 - Die Betriebskosten (2.500 € / 6.000 €) sind geschätzt, nicht aufgeschlüsselt.
 - **Rechnet die Tabellen nach, bevor Geld ausgegeben wird.**

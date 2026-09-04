@@ -2,7 +2,15 @@
 
 ## 📌 Status
 
-`DRAFT` · **v6** — nach zwei unabhängigen Widerlegungen (v2: `REVISE`, v4: `REVISE`). v5 war **auf ein Drittel gekürzt**: die Versionsgeschichte früherer Fassungen ist gestrichen, nicht abgesichert. Was hier steht, ist der aktuelle Stand.
+`DRAFT` · **v7** — nach drei unabhängigen Widerlegungen (v2: `REVISE`, v4: `REVISE`, v6: `REVISE`). v5 war **auf ein Drittel gekürzt**: die Versionsgeschichte früherer Fassungen ist gestrichen, nicht abgesichert. Was hier steht, ist der aktuelle Stand.
+
+**Neu in v7:** **Elternzeit als dritte Option** ergänzt — bisher war das Konzept binär (Job behalten / Job kündigen) und übersah die umkehrbare Zwischenform. Ergebnis: **Elternzeit trägt sich nicht** — ganzjährig gerechnet bringt sie **+1.179 €** gegenüber Zustand A für ~11 h/Woche mehr Arbeit, und nach Umsatzsteuer wird die Differenz negativ. Elterngeld gibt es bei Kindern von 7 und 3 **nicht mehr**; 4 Monate kosten ~2.000–2.300 € Netto plus 4/12 des Jahresurlaubs.
+
+> ⚠️ **Auch v7 wurde unabhängig geprüft — `REVISE`, mit einem `BLOCK`.** Der erste v7-Entwurf **erfand eine Beitragsfalle, die es nicht gibt**: Er behauptete, Elternzeit koste den 0-€-Krankenversicherungsvorteil, und begründete das mit § 10 SGB V (Familienversicherung) — der **falschen Norm**. Während der Elternzeit bleibt die Pflichtmitgliedschaft nach § 192 SGB V bestehen; die *Grundsätzlichen Hinweise des GKV-Spitzenverbandes* (Nr. 3.1) sagen ausdrücklich, dass Elternzeit eine nebenberufliche Selbständigkeit **nicht** hauptberuflich macht. Der Fehler lag um bis zu **4.500 €/Jahr** daneben.
+>
+> Ebenfalls gestrichen: die Verortung in Schritt 4 (das Gate belegt 3,3 Termine/Woche und damit gerade *nicht* die nötige Nachfrage), die Empfehlung „lieber länger als 4 Monate" (§ 16 Abs. 3 BEEG — vorzeitige Beendigung nur mit Zustimmung des Arbeitgebers), und die „Nebenanwendung Ferienblöcke" (§ 17 BEEG kürzt den Urlaub; die 3-Abschnitte-Grenze war doppelt verplant).
+>
+> **Damit ist die Fehlerklasse zum vierten Mal aufgetreten** — und diesmal in Reinform: nicht ein Rechenfehler, sondern ein **überflüssiges Argument**, eingeführt weil es das gewünschte Ergebnis schneller erreichte als die vorhandene Arithmetik. Die richtige Antwort („lohnt sich nicht") stand bereits in den Zahlen. Der Abschnitt wurde von ~75 auf ~45 Zeilen gekürzt.
 
 **Neu in v6:**
 - **Die Rentenversicherung fehlte komplett.** Zustand A liegt über der Geringfügigkeitsgrenze → 18,6 % → **Kernzahl von 5.120 € auf ~4.100 € netto korrigiert (−20 %)**.
@@ -189,6 +197,70 @@ Freiwilliges Mitglied. Jetzt zählt **alles** — Gewinn *und* Gehalt — bis zu
 
 ⚠️ **Was die Kasse tatsächlich prüft** (nicht der Umsatz!): Hauptberuflich ist die Selbständigkeit, wenn sie „von der **wirtschaftlichen Bedeutung** und dem **zeitlichen Aufwand** her die übrigen Erwerbstätigkeiten zusammen **deutlich übersteigt**" und den Mittelpunkt der Erwerbstätigkeit bildet. Maßgeblich für die wirtschaftliche Bedeutung ist das **Arbeitseinkommen nach § 15 SGB IV — der Gewinn, nicht der Umsatz**. **Beide** Kriterien müssen erfüllt sein, und zwar „deutlich". Bei 12.000 € Gehalt und ~8.000 € Gewinn (Zustand A) ist keines der beiden erfüllt — der Abstand ist komfortabel. **Eine Kassenentscheidung, keine Formel.**
 
+## Elternzeit — die dritte Spalte, die bisher fehlte
+
+Das Konzept war bisher **binär**: Job behalten (A) oder kündigen (B). Es gibt eine dritte Form: **Elternzeit** — unbezahlte, aber umkehrbare Freistellung mit Rückkehrrecht. Ruht der Job, wird das Vormittagsfenster frei, kapazitätsmäßig wie Variante B.
+
+> ⚠️ **Elternzeit ≠ Elterngeld.** Basiselterngeld gibt es nur in den **ersten 14 Lebensmonaten**. Bei Kindern von 7 und 3 gibt es **keines mehr** — Elternzeit ist hier reine unbezahlte Freistellung. 4 Monate kosten ~2.000–2.300 € Netto **plus 4/12 des Jahresurlaubs** (§ 17 Abs. 1 BEEG erlaubt die Kürzung um 1/12 je vollem Monat).
+
+### Die Rechnung — und sie allein entscheidet
+
+Auf ein volles Jahr, mit den Parametern des Dokuments (35 Wochen, 100 €/Termin, RV 18,6 %, Steuer 37 %):
+
+| | **A · Job behalten** | **C · Elternzeit** |
+|---|---|---|
+| Umsatz / Gewinn | 10.500 € / 8.000 € | 28.000 € / 22.000 € |
+| KV/PV | 0 € | **0 €** (siehe unten) |
+| − Rentenversicherung | −1.488 € | −4.092 € |
+| − Einkommensteuer | −2.409 € | −6.626 € |
+| = netto Selbständigkeit | 4.103 € | 11.282 € |
+| + Verlagsgehalt | +6.000 € | 0 € |
+| **= Familienposition** | **10.103 €** | **11.282 €** |
+| **Differenz** | — | **+1.179 € für ~11 h/Woche mehr Arbeit** |
+
+> **Damit ist die Frage beantwortet.** Und ab dem Folgejahr reißt C mit 28.000 € die Kleinunternehmergrenze — dieselbe Umsatzsteuer-Zeile, die für B mit −4.470 € beziffert ist. **Dann wird die Differenz negativ.** Elternzeit trägt sich nicht, und zwar aus reiner Arithmetik.
+
+**Und der konkret gefragte 4-Monats-Block ist noch schwächer.** 4 Monate sind ~17 Kalenderwochen; abzüglich anteiliger bayerischer Schulferien bleiben **~12 nutzbare Arbeitswochen**. Selbst bei *sofort voller* Auslastung ab Tag 1: 12 × 8 × 100 € = 9.600 € Umsatz − anteilige Betriebskosten ≈ **7.500 € Gewinn** für 4 Monate ohne Gehalt (~2.200 € entgangenes Netto + 1/3 Jahresurlaub). Netto bleibt ein niedriger vierstelliger Betrag — für einen Zeitraum, in dem sie Kundinnen aufbaut, die sie danach mit 3 Terminen/Woche weiterbetreuen muss.
+
+⚠️ **Beide Rechnungen setzen voraus, dass sie in der Elternzeit 8 Termine/Woche gibt** — was mit § 15 Abs. 1 BEEG („das Kind selbst betreuen und erziehen") in Spannung steht, da das Vormittagsfenster genau die Betreuungszeit ist. Die Zahlen sind also eine **Obergrenze**, kein realistischer Erwartungswert.
+
+### ⚠️ Korrektur: eine frühere Fassung erfand hier eine Beitragsfalle, die es nicht gibt
+
+v7 behauptete zunächst, Elternzeit koste den 0-€-Krankenversicherungsvorteil, weil die Beitragsfreiheit am Anspruch auf **Familienversicherung** (§ 10 SGB V) hänge. **Das ist die falsche Norm.** Während der Elternzeit bleibt die **Pflicht**mitgliedschaft erhalten (§ 192 Abs. 1 Nr. 2 SGB V); ohne Arbeitsentgelt fallen keine Beiträge an, und § 226 SGB V hält den Gewinn beitragsfrei. Familienversicherung ist gar nicht einschlägig.
+
+Der einzige Weg, das zu verlieren, wäre eine Einstufung als hauptberuflich selbständig — und dazu sagen die *Grundsätzlichen Hinweise des GKV-Spitzenverbandes* (20.03.2019, Nr. 3.1) ausdrücklich: eine nebenberufliche Selbständigkeit wird **nicht** dadurch hauptberuflich, dass „im Fall der **Elternzeit** kein Arbeitsentgelt gezahlt wird", solange sie nicht ausgeweitet wird. Wird sie ausgeweitet, gilt Nr. 3.2 — **Stunden + Hauptquelle des Lebensunterhalts**, nicht Gewinn gegen Gehalt:
+
+| Termine/Woche | Zeitaufwand | Gewinn in % der Bezugsgröße (3.955 €/Mon.) | Einstufung |
+|---|---|---|---|
+| 4–6 | 14–18 h | 24–39 % | ≤ 20 h → **nicht hauptberuflich** |
+| 8 | 22 h | 46 % | 20–30 h, aber < 50 % **und** gegen ~140k des Mannes nicht Hauptquelle → **nicht hauptberuflich** |
+
+**In keiner Zeile wird sie hauptberuflich.** Die erfundene Falle lag um bis zu 4.500 €/Jahr daneben. *(Bleibt eine Gesamtschau der BKK im Einzelfall — die Hinweise sind Empfehlung, nicht Gesetz. Aber die Richtung ist klar, und die frühere Begründung war unabhängig davon falsch.)*
+
+### Der Rechtsrahmen — was tatsächlich bindet
+
+| | Regelung | Norm |
+|---|---|---|
+| Dauer | 36 Monate je Kind bis zum 8. Geburtstag; bis zu 24 Monate im Fenster 3.–8. Geburtstag | § 15 BEEG |
+| ⚠️ **Zeitabschnitte** | **max. 3 je Elternteil und Kind**; ein vierter nur mit schlichter Zustimmung des Arbeitgebers — ohne Frist, ohne Rechtsbehelf | § 16 Abs. 1 S. 6 BEEG |
+| Anmeldefrist (Fenster 3–8) | **13 Wochen** vor Beginn, schriftlich | § 16 Abs. 1 BEEG |
+| ⚠️ **Vorzeitige Beendigung** | **nur mit Zustimmung des Arbeitgebers.** Wer 8 Monate anmeldet, kommt nach 4 nicht zurück | § 16 Abs. 3 BEEG |
+| Erwerbstätigkeit | max. 32 Wochenstunden (Kinder ab 1.9.2021; davor **30 h** — gilt für den 7-Jährigen) | § 15 Abs. 4 BEEG |
+| Selbständigkeit | **bedarf der Zustimmung des Arbeitgebers**; Verweigerung nur binnen 4 Wochen aus dringenden betrieblichen Gründen in Textform | § 15 Abs. 4 BEEG |
+| Urlaub | Kürzung um 1/12 je vollem Elternzeit-Monat | § 17 Abs. 1 BEEG |
+| Materielle Voraussetzung | sie muss „dieses Kind **selbst betreuen und erziehen**" — beide Kinder sind vormittags in Kita/Schule | § 15 Abs. 1 BEEG |
+
+### Wann es überhaupt relevant wird — und für welches Kind
+
+⚠️ **Nicht an das Gate aus Schritt 3 koppeln.** Das Gate verlangt eine Neukundin alle zwei Wochen = 26/Jahr; bei 3–6 Sitzungen je Kundin sind das ~117 Sitzungen = **3,3 Termine/Woche — exakt Zustand A**. Für 8 Termine/Woche bräuchte es **62 Neukundinnen/Jahr**, das 2,4-fache. **Ein bestandenes Gate beweist also gerade, dass die freigemachte Kapazität nicht gefüllt werden kann.**
+
+Elternzeit wird erst dann eine echte Option, wenn der Neukundenzulauf **~1 pro Woche** erreicht — eine Größe, die das Gate nicht misst und die nach heutigem Stand niemand belegen kann.
+
+⚠️ **Wer einen langen Block anmeldet, baut zusätzlich Anwartschaften ab:** Für Kinder über 3 sammelt sich während der Elternzeit **keine ALG-Anwartschaft** (§ 26 Abs. 2 Nr. 1 SGB III versichert nur die Erziehung eines Kindes unter 3). Bei 4 Monaten folgenlos, bei dem früher empfohlenen „lieber länger" fängt es an zu zählen — ein weiterer Grund gegen lange Blöcke.
+
+⚠️ **Und für den 7-Jährigen ist die Frage bereits entschieden:** Der Plan erreicht Schritt 4 frühestens ~März 2028, plus 13 Wochen Vorlauf ≈ Juni 2028. Dann ist das Kind **neun** — der Anspruch ist zu 100 % verfallen. **Nur der Jüngere bleibt** (8. Geburtstag ~2031).
+
+
 ## Wer ist vormittags wirklich da?
 
 v4 hatte hier zwei Fehler, beide korrigiert:
@@ -200,7 +272,7 @@ v4 hatte hier zwei Fehler, beide korrigiert:
 | **Frauen 60+** | ✅ unterschätzt | Im Landkreis Dachau wächst **nur** die Gruppe 65+ (+30,8 % bis 2044), bei Kaufkraftindex 118. Vormittags verfügbar, privat zahlend. Themen: Postmenopause, Beckenboden, Schlaf, Knochen. |
 | Schicht, Selbständige, nicht erwerbstätig | ✅ | im Konzept bisher nie ausgewertet |
 
-> **Fazit der Korrektur:** Das Vormittagsfenster ist **nicht** so einseitig, wie v4 behauptet hat. Es schließt weniger Wechseljahres-Frauen aus (Homeoffice) und weniger junge Mütter ein (Teilzeit an Kita-Zeiten). Für ~10 Stammkundinnen — mehr braucht Zustand A nicht — reicht es allemal.
+> **Fazit der Korrektur:** Das Vormittagsfenster ist **nicht** so einseitig, wie v4 behauptet hat. Es schließt weniger Wechseljahres-Frauen aus (Homeoffice) und weniger junge Mütter ein (Teilzeit an Kita-Zeiten). ⚠️ *Ein früherer Schlusssatz hier lautete „für ~10 Stammkundinnen reicht es allemal" — der ist mit der Nenner-Korrektur hinfällig: gebraucht werden **18–35 Neukundinnen im Jahr**, und die Frage ist nicht, ob das Fenster sie fasst, sondern ob der Vertrieb sie liefert.*
 
 ---
 
@@ -340,7 +412,7 @@ In der reinen Ausbildungsphase gibt es **keine Gegenleistung** für die Kündigu
 > ⚠️ **Zur „Gewerbe-Falle" — in v6 nach Prüfung entschärft.** Eine frühere Fassung behauptete, eine Gewerbeanmeldung bei null Umsatz führe „automatisch" zur Einstufung als hauptberuflich. **Das ist überzeichnet:** Hauptberuflichkeit verlangt auch hier wirtschaftliche *und* zeitliche Dominanz; eine Anmeldung ohne Umsatz und mit geringem Zeitaufwand begründet sie nicht. Was sie begründet, ist eine **Nachweis- und Erklärungspflicht** gegenüber der Kasse — also Papierkram plus Streitrisiko, nicht sicher 267 €/Monat.
 > Trotzdem gilt: **nicht früher anmelden als nötig.** § 14 GewO verlangt die Anzeige **bei Aufnahme** des Betriebs — „erst anmelden, wenn die erste zahlende Kundin terminiert ist" ist zulässig, „erst wenn schon Umsatz läuft" wäre es nicht.
 
-³ Der Erwerbsminderungsschutz verlangt 36 Pflichtbeitragsmonate in den letzten 60. In 11 Monaten Pause ist er nicht verloren, aber die Uhr läuft — und er ist bei zwei kleinen Kindern die wertvollste dieser Absicherungen.
+³ Der Erwerbsminderungsschutz verlangt 36 Pflichtbeitragsmonate in den letzten 60. ✅ **Entwarnung, in v7 nachgetragen:** § 57 SGB VI macht die Erziehung eines Kindes **bis zum 10. Lebensjahr** zur Berücksichtigungszeit, und § 43 Abs. 4 Nr. 2 SGB VI **verlängert den Fünfjahreszeitraum um genau diese Zeiten**. Über den 3-Jährigen läuft das bis ~2033. Die frühere Formulierung „die Uhr läuft" war zu alarmistisch — in dieser Konstellation läuft sie praktisch nicht.
 
 ⁴ § 10 Abs. 3 SGB V schließt Kinder nur aus, wenn der **andere Elternteil nicht gesetzlich versichert** ist. Hier sind beide in der GKV → die Kinder bleiben in jedem Fall beitragsfrei. *(Diese Sorge war unbegründet und wird hier ausdrücklich ausgeräumt.)*
 
@@ -383,7 +455,11 @@ Kleingewerbe anmelden. **DRV-Meldung binnen 3 Monaten.** Berufsgenossenschaft (V
 
 ### Schritt 4 — nur bei bestandenem Gate
 
-Erst hier stellt sich die Frage nach Heilpraktikerprüfung oder MFM-Ausbildung — mit belegter Nachfrage im Rücken. **Die Kündigung des Verlagsjobs stellt sich nach der Rechnung oben vermutlich gar nicht.**
+Erst hier stellt sich die Frage nach Heilpraktikerprüfung oder MFM-Ausbildung — mit belegter Nachfrage im Rücken.
+
+> **Zur Elternzeit an dieser Stelle — ausdrücklich *nicht* an dieses Gate gekoppelt.** Eine frühere Fassung verortete den Elternzeit-Block hier. Das war falsch: Ein bestandenes Gate (26 Neukundinnen/Jahr) belegt ~3,3 Termine/Woche, also **genau Zustand A** — und beweist damit gerade, dass die freigemachte Kapazität *nicht* gefüllt werden kann. Elternzeit wird erst bei **~1 Neukundin pro Woche** eine Option; das misst dieses Gate nicht.
+>
+> Falls es je so weit kommt, gilt: **13 Wochen Vorlauf**, Zustimmung des Verlags zur Selbständigkeit (§ 15 Abs. 4 BEEG), und — anders als eine frühere Fassung riet — **keinen langen Block anmelden**: die vorzeitige Beendigung braucht nach § 16 Abs. 3 BEEG die Zustimmung des Arbeitgebers. Umkehrbar ist das *Ob*, nicht das *Wann*.
 
 ---
 
@@ -396,8 +472,9 @@ Erst hier stellt sich die Frage nach Heilpraktikerprüfung oder MFM-Ausbildung �
 5. **Fällt der 7-Jährige unter den Ganztags-Rechtsanspruch?** Entscheidet über 5 Ferienwochen — Landratsamt, zehn Minuten.
 6. **Ist der Raum bei der Bekannten vormittags frei?** Ein Massage-/Kosmetikstudio hat vormittags typischerweise eigene Prime Time. Nie geprüft, aber Voraussetzung für alles.
 7. **Krankengeld ja oder nein?** Der ermäßigte Beitragssatz schließt Kranken- *und* Kinderkrankengeld aus. Nur relevant in Variante B — aber dort eine echte Familienentscheidung.
-8. **Passt ein kirchlich getragenes Programm (MFM)** weltanschaulich?
-9. Kirchensteuerpflichtig? (~2,9 Prozentpunkte zusätzliche Grenzbelastung.)
+8. **Wie viele der drei Elternzeit-Zeitabschnitte sind beim *jüngeren* Kind schon verbraucht?** Nicht „wie viele Monate" — die Abschnitte binden zuerst (§ 16 Abs. 1 S. 6 BEEG: max. 3, ein vierter nur mit schlichter Zustimmung des Arbeitgebers). Ein durchgehender Block nach der Geburt wäre bereits Abschnitt 1. **Der ältere Sohn ist raus:** bis der Plan Schritt 4 erreicht (~2028), ist er neun. Eine Frage an die Personalakte des Verlags, nicht an ein Gesetz.
+9. **Passt ein kirchlich getragenes Programm (MFM)** weltanschaulich?
+10. Kirchensteuerpflichtig? (~2,9 Prozentpunkte zusätzliche Grenzbelastung.)
 
 # ⚠️ Bekannte Lücken
 
@@ -409,7 +486,9 @@ Erst hier stellt sich die Frage nach Heilpraktikerprüfung oder MFM-Ausbildung �
 - **Die Lage der Kippzone (5–6 Termine) ist eine Einschätzung, keine Rechnung.** Das Gesetz nennt „deutlich übersteigend" ohne Schwellenwert; wo eine konkrete Kasse die Grenze zieht, ist Verwaltungspraxis. Nur die schriftliche BKK-Auskunft macht daraus eine planbare Zahl.
 - **Die Rentenversicherungspflicht ist wahrscheinlich, aber nicht sicher.** Ob die DRV diese Tätigkeit als Lehrtätigkeit nach § 2 Satz 1 Nr. 1 SGB VI einordnet, ist Einzelfallwürdigung. Sicher ist nur, dass die frühere Gegenbehauptung („1:1 fällt nicht darunter") die Auslegung falsch wiedergab und dass Zustand A über der Geringfügigkeitsgrenze liegt. **18,6 % des Gewinns hängen an dieser Einordnung.**
 - **Der Nenner (3–6 Sitzungen je Kundin) ist ein Branchen-Erfahrungswert, keine Messung** für dieses Angebot in Dachau. Er kann sich als zu pessimistisch erweisen — Schritt 1 muss ihn erheben.
-- ⚠️ **Die Fehlerklasse ist jetzt dreimal aufgetreten** — v2 zu pessimistisch, v4 zu optimistisch, v6 these-treu. Eine vierte Fassung ist nicht automatisch die richtige. **Der einzige verlässliche Ausweg aus diesem Muster ist nicht eine weitere Rechenrunde, sondern Schritt 1: 20 Gespräche, 0 €.**
+- ⚠️ **Die Fehlerklasse ist jetzt viermal aufgetreten** — v2 zu pessimistisch, v4 zu optimistisch, v6 these-treu, v7 mit einer frei erfundenen Rechtsfalle. Jede Fassung wurde in genau der Richtung falsch, die ihre These brauchte. **Der Ausweg ist nicht die fünfte Rechenrunde, sondern Schritt 1: 20 Gespräche, 0 €.**
+- **Die Elternzeit-Frage ist ohnehin frühestens in ~18 Monaten entscheidungsreif.** Alles darüber hinaus ist Vorratsarbeit an einer Entscheidung, deren Voraussetzungen (Nachfrage, verbrauchte Zeitabschnitte, Haltung des Verlags) heute niemand kennt.
+- **Die KV-Einstufung während der Elternzeit bleibt eine Gesamtschau der BKK.** Die Grundsätzlichen Hinweise sind Empfehlung, nicht Gesetz — die Richtung ist klar, die Rechtsverbindlichkeit nicht.
 - **Das Job-Netto (~6.000–6.900 €/Jahr) ist ein Grenzwert, kein Kontoauszug** — er hängt am gemeinsamen Grenzsteuersatz und damit am Einkommen des Mannes. Der exakte Übergangsbereichs-Beitrag wurde nicht nachgerechnet.
 - **Zur Klippe existiert kein Präzedenzfall aus diesem Berufsfeld** — die Mechanik folgt aus § 5 Abs. 5 SGB V und den Gemeinsamen Grundsätzen, nicht aus einem entschiedenen Fall einer Gesundheitsberaterin mit Midijob.
 - **Versicherungsdeckung bei Grenzüberschreitung ungeklärt** — kein Bedingungswerk eingesehen.
