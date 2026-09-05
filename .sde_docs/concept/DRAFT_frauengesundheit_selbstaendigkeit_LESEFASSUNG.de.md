@@ -1,5 +1,28 @@
 # Frauengesundheitsberatung in Dachau — die Idee auf ein paar Seiten
 
+> # ⛔ ÜBERHOLT — nicht mehr als Entscheidungsgrundlage verwenden
+>
+> **Aktuelle Lesefassung: [`DRAFT_frauengesundheit_LESEFASSUNG.de.md`](DRAFT_frauengesundheit_LESEFASSUNG.de.md)**
+>
+> Dieses Dokument gibt den Stand vom 4. September 2026 wieder. Seither ist eine **erfundene Randbedingung** aufgeflogen, die es trägt, und die Wirtschaftlichkeit wurde vollständig neu gerechnet. Es wird nur als Historie aufbewahrt.
+>
+> Die wichtigsten überholten Aussagen:
+>
+> | Hier | Aktueller Stand |
+> |---|---|
+> | „Dienstag und alle Abende sind Familienzeit — **feste Randbedingung**" | **Frei erfunden.** Dienstag ist ein Tag wie jeder andere, Abende und Samstage sind gelegentlich nutzbar |
+> | Zeitfenster 4 × 5,5 h = 22 h | 5 Vormittage = 27,5 h, plus gelegentlich Abend/Samstag |
+> | Betriebskosten 2.500 € / 6.000 € („geschätzt") | ~4.840 € bzw. ~8.000 €, von unten aufgeschlüsselt |
+> | Rentenversicherung −1.488 € | 0 € — der Gewinn liegt unter der Geringfügigkeitsgrenze; als Heilpraktikerin ohnehin nicht pflichtig |
+> | „Ein höherer Preis ist **nicht ungefährlich**" | **Umgekehrt.** Der Preis-Pfad berührt kein Kriterium der Hauptberuflichkeit — er ist inzwischen die Empfehlung |
+> | Umsatzsteuer macht Szenario B negativ | Artefakt eines 8-Termine-Falls; für Heilbehandlungen greift § 4 Nr. 14 a UStG |
+> | „Das **Gewerbe** anmelden" | Falsch für die Heilpraktikerin — Katalogberuf nach § 18 EStG, freiberuflich |
+> | „Alle drei Kassenkanäle sind zu" | Zu absolut — *Ernährung* ist eines der vier Handlungsfelder der Prävention |
+>
+> Verbindlich sind heute: `DRAFT_frauengesundheit_qualifikationsweg.de.md` (Wege und Qualifikation), `DRAFT_frauengesundheit_wirtschaftlichkeit.de.md` (Rechnung) und die Langfassung `DRAFT_frauengesundheit_selbstaendigkeit.de.md` für alles Übrige.
+
+---
+
 > **Lesefassung.** Diese Datei fasst nur das Ergebnis zusammen und lässt den Weg dorthin weg.
 > Verbindliche Grundlage für die weitere Arbeit bleibt `DRAFT_frauengesundheit_selbstaendigkeit.de.md`.
 
