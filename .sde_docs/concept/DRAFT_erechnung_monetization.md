@@ -4,6 +4,8 @@
 
 **DRAFT · v6 · 2026-09-17**
 
+**Follow-up, 2026-09-17:** the user has redirected the current exploration to a self-service, bilateral invoice-clarification website. See [the dedicated clarification concept](DRAFT_invoice_clarification.md), now the active proposal for discussion. Its v2 assesses demand, competitive space and monetisation, recommending a capped test with small construction-supervision offices and a €39/month price hypothesis; paid demand remains unvalidated. The invoice bridge below remains a documented alternative; it is not approved and is no longer the leading recommendation for the user's stated product approach.
+
 **Recommendation: test a small paid software product that makes existing outgoing invoices usable by a specific retail customer, starting with Lexware Office suppliers invoicing through Markant.** Invest at most five developer-days in the first technical prototype, after reproducing the problem on two current customer examples. This is a positive recommendation for a bounded experiment, not evidence of an already validated business.
 
 Working name: **Rechnungsbrücke**. The offer is: keep your invoicing system, select the recipient, add the missing business identifiers once, and export a checked invoice with a transparent change report. Start with one source format and one documented recipient route. Proposed price: **€79 net/month**. At that price, 26–38 active customers produce €2,054–3,002 MRR.
