@@ -1,10 +1,16 @@
 # Begrünungskonzept Lärmschutzzaun (20 m, Ostgrenze / Westexposition)
 
-📌 **Status:** DRAFT — Version 3 (Standortdaten eingearbeitet)
+📌 **Status:** DRAFT — Version 4 (Familienvorschläge geprüft und teilweise übernommen)
 📅 **Erstellt:** 2026-09-08
 🎯 **Pflanztermin:** Ende September 2026, komplett in einem Durchgang
 
-> **Version 3** setzt die gemessenen Standortdaten ein (45 cm breit, 50 cm locker, kieshaltiger
+> **Version 4** prüft die Vorschläge aus der Familie (Kletterrose/Clematis-Wechsel, Sockel-Rhythmus,
+> Gras, Frühjahrsblüte) und übernimmt vier davon — Clematis in allen vier wintergrünen Feldern, eine
+> immergrüne Segge als Taktgeber, den Rhythmus-Gedanken im Sockel und Krokusse gegen die
+> Frühjahrslücke. Kletterrosen und Lavendel/Katzenminze bleiben draußen. Details unter
+> „Vorschläge aus der Familie". Pflegebudget: weiterhin **3 Termine**, jetzt ~4 h statt 3,5 h.
+>
+> **Version 3** setzte die gemessenen Standortdaten ein (45 cm breit, 50 cm locker, kieshaltiger
 > Untergrund): Sockelbepflanzung bestätigt, aber einreihig und mit kompakteren Arten;
 > Gießrhythmus auf kurze, häufige Gänge; keine Wurzelsperre. Der Feldplan bleibt unverändert.
 >
@@ -66,15 +72,20 @@ jetzt als **zwei zusammenhängende Blöcke à 2 Felder** an den Enden. Drei Grü
 | Feld | Pflanzung | Charakter | Winter |
 |---|---|---|---|
 | **F1** | *Lonicera henryi* + *Clematis viticella* 'Étoile Violette' (dunkelviolett) | Wintergrüner Block + Blütenwolke Juni–Sept | 🟢 |
-| **F2** | *Lonicera henryi* | Wintergrüner Block | 🟢 |
+| **F2** | *Lonicera henryi* + *Clematis viticella* 'Alba Luxurians' (weiß) | Wintergrüner Block + weiße Blüte | 🟢 |
 | **F3** | **Weinrebe 'Muscat bleu'** (pilzwiderstandsfähig, blau, Muskataroma) | Naschen, Laubfärbung | ⚪ |
 | **F4** | **Dornenlose Brombeere 'Loch Ness'** | Naschen Aug–Sept — das **verlässlichste** Naschangebot | 🟡 |
 | **F5** | **Weinrebe 'Muscat bleu'** #2 (dieselbe Sorte) | Naschen | ⚪ |
-| **F6** | *Lonicera henryi* | Wintergrüner Block | 🟢 |
+| **F6** | *Lonicera henryi* + *Clematis viticella* 'Étoile Violette' (dunkelviolett) | Wintergrüner Block + Blütenwolke | 🟢 |
 | **F7** | *Lonicera henryi* + *Clematis viticella* 'Alba Luxurians' (weiß) | Wintergrüner Block + weiße Blüte | 🟢 |
 
-**9 Kletterpflanzen, 4 Arten.** Ein Pflanzloch pro Feldmitte (Fundamente liegen auf den Grenzen);
-in F1 und F7 die Clematis 50 cm daneben.
+**11 Kletterpflanzen, 4 Arten.** Ein Pflanzloch pro Feldmitte (Fundamente liegen auf den Grenzen);
+die Clematis jeweils 50 cm daneben.
+
+**Die Clematis stehen im Wechsel violett → weiß → (Naschzone) → violett → weiß.** Beide wintergrünen
+Blöcke tragen dieselbe Farbfolge — das bindet die zwei Enden optisch aneinander, über die Naschzone
+hinweg. Nur **zwei Sorten** für vier Pflanzen: mehr Sorten würden aus 5 m Entfernung nichts
+hinzufügen, was man als Unterschied lesen kann.
 
 **Warum zweimal dieselbe Weinsorte?** Zwei Sorten heißen zwei Reifezeitpunkte, zwei
 Krankheitsprofile, zwei Schnittentscheidungen — bei identischem optischem Ergebnis. Eine Sorte
@@ -105,10 +116,16 @@ gehört nicht an eine besonnte, abstrahlende Wand.
 
 | Zone | Pflanzung | Warum |
 |---|---|---|
-| Vor F3–F5 (Naschzone), ~9 Stk | **Monatserdbeere** 'Rügen' oder 'Mara des Bois', Abstand 30 cm | Naschen von Juni bis Oktober in Kinderhöhe. **Das verlässlichste essbare Element der Anlage** — der Rückfallplan, falls die Trauben ohne Morgensonne spät oder mager bleiben. Monatserdbeeren wachsen horstig und ausläuferarm, bleiben also in der schmalen Reihe. |
-| Vor F1, F2, F6, F7, ~12 Stk | *Geranium* × *cantabrigiense* 'Biokovo' (weiß-rosa) oder 'Karmina' (karminrot), Abstand 30 cm | **Halbimmergrüner, dichter Teppich, nur 20–25 cm hoch** — verlängert das Wintergrün der Blöcke bis auf den Boden. Ungiftig, Bienenweide, und braucht **keinen Rückschnitt**: kostet null im Pflegebudget. |
+| **Über die ganzen 20 m**, alle ~2 m, 9 Stk | ***Carex oshimensis* 'Everest'** (Japan-Segge, weiß-grün) | **Der Taktgeber.** Ein immergrünes Gras, das sich in gleichmäßigem Abstand durch die gesamte Reihe zieht, bindet die 20 m zu einer Komposition zusammen — sonst zerfällt der Sockel in „Erdbeeren in der Mitte, Storchschnabel an den Enden". Immergrün, ungiftig, 30–40 cm, verträgt die Tropfbewässerung. Pflege: einmal im Frühjahr mit den Fingern auskämmen, **nicht schneiden** — 5 Minuten. |
+| Vor F3–F5 (Naschzone), 9 Stk | **Monatserdbeere** 'Rügen' oder 'Mara des Bois', Abstand 30 cm | Naschen von Juni bis Oktober in Kinderhöhe. **Das verlässlichste essbare Element der Anlage** — der Rückfallplan, falls die Trauben ohne Morgensonne spät oder mager bleiben. Horstig und ausläuferarm, bleibt in der schmalen Reihe. |
+| Vor F1, F2, F6, F7, 10 Stk | *Geranium* × *cantabrigiense* 'Biokovo' (weiß-rosa) oder 'Karmina' (karminrot), Abstand 30 cm | **Halbimmergrüner, dichter Teppich, nur 20–25 cm hoch** — verlängert das Wintergrün der Blöcke bis auf den Boden. Ungiftig, Bienenweide, **kein Rückschnitt nötig**: kostet null im Pflegebudget. |
+| In Gruppen zwischen die Stauden, ~100 Zwiebeln | **Krokusse** (*Crocus vernus* / *tommasinianus*) | Schließt die **Frühjahrslücke**: von Februar bis April blüht sonst nichts an dieser Wand. Werden **jetzt im September** gesteckt — der Termin passt ohnehin. Danach null Pflege, sie vermehren sich von selbst. |
 
-Menge: ca. 21 Stauden.
+Menge: 28 Stauden + ~100 Blumenzwiebeln.
+
+⚠️ **Beim Zwiebelkauf:** ausschließlich Krokus, **niemals Herbstzeitlose** (*Colchicum autumnale*).
+Die beiden sehen sich ähnlich, und Herbstzeitlose ist stark giftig — die gefährlichste Verwechslung
+im ganzen Plan. Krokusse aus dem Frühjahrsblüher-Regal, nicht aus dem Herbstblüher-Regal.
 
 **Nicht *Geranium* 'Rozanne', nicht *Alchemilla mollis*** (beide standen noch in Version 2): sie
 werden 50–80 cm breit und würden in einer 20-cm-Reihe über die Rasenkante wuchern — dann mäht man
@@ -178,12 +195,18 @@ mulchen. Vlies nur bei angekündigtem Kahlfrost unter −10 °C.
 
 | # | Termin | Arbeit | Dauer |
 |---|---|---|---|
-| **1** | **Februar** (frostfrei, vor dem Saftfluss) | Weinreben auf Zapfen mit 2 Augen. Clematis viticella **komplett auf 30 cm** (Schnittgruppe 3 — der pflegeleichteste Clematis-Typ). *Lonicera henryi* auslichten und an der Zaunoberkante zurücknehmen. Alles Holz an einem Tag. | ~1,5 h |
+| **1** | **Februar** (frostfrei, vor dem Saftfluss) | Weinreben auf Zapfen mit 2 Augen. **Vier** Clematis viticella komplett auf 30 cm (Schnittgruppe 3) und die abgestorbenen Ranken aus dem Geißblatt ziehen. *Lonicera henryi* auslichten und an der Zaunoberkante zurücknehmen. Seggen auskämmen. Alles Holz an einem Tag. | **~2 h** |
 | **2** | **Ende Juni / Anfang Juli** | **Wein-Laubarbeit**: Geiztriebe entfernen, Blätter in der Traubenzone auslichten. Das ist der Termin, der über Mehltau und Reife entscheidet — bei fehlender Morgensonne der wichtigste im Jahr. Brombeerruten anbinden. | ~1 h |
 | **3** | **Oktober** (nach der Brombeerernte) | Abgetragene Brombeerruten raus, junge anbinden. Bewässerung spülen und entleeren. Mulch nachlegen. | ~1 h |
 
-**3 Termine, ~3,5 h/Jahr.** Düngung: im März eine Handvoll organischer Volldünger + Kompost je
+**3 Termine, ~4 h/Jahr.** Düngung: im März eine Handvoll organischer Volldünger + Kompost je
 Pflanze, läuft bei Termin 1 oder 2 mit.
+
+> **Ehrliche Buchführung:** Die zwei zusätzlichen Clematis kosten **~30 Minuten** auf dem
+> Februar-Termin — nicht wegen des Schnitts (der ist trivial), sondern weil die abgestorbenen Ranken
+> aus dem wintergrünen Geißblatt gezogen werden müssen. Das Jahresbudget steigt damit von 3,5 auf
+> 4 Stunden. **Die Zahl der Termine bleibt bei 3** — das ist die Grenze, die nicht verhandelbar ist,
+> weil an ihr das ganze Konzept hängt.
 
 *Wichtig zur Reihenfolge:* Die Brombeerruten kommen im **Oktober** raus, nicht im August —
 'Loch Ness' trägt bis in den September, und Version 1 hätte die Ernte abgeschnitten.
@@ -214,6 +237,50 @@ die Anlage; eine Streichung entfernt das Risiko.
   freistehend und würde nie eine Wand bilden.
 - **Zwei *Clematis viticella*.** Sie erfüllen „Blüten + Insekten + Abwechslung" und fallen auf
   denselben Februartermin wie alles andere Holz. Kosten im Pflegebudget: **null.**
+
+---
+
+## 💬 Vorschläge aus der Familie — was übernommen wurde und was nicht
+
+Eingebrachter Gegenentwurf (Kletterrose ↔ Clematis im Wechsel; Sockel aus Lavendel, Katzenminze,
+Storchschnabel und Gras im Rhythmus; Aufteilung in 4–5 Abschnitte mit verschiedenen Kletterern;
+Ziel: „Blüten von Frühjahr bis Herbst").
+
+**Zwei Vorbemerkungen.** Der Vorschlag ist für **11 m** gerechnet — die Abschnittsmaße und Mengen
+lassen sich nicht auf 20 m übertragen. Und alle vier Bausteine zeigen in Richtung *mehr*: mehr
+Arten, mehr Wechsel, mehr Blüte. Das ist genau die Richtung, gegen die das Gegengutachten sein
+stärkstes Argument gerichtet hat. Übernahme heißt deshalb: **jeder Baustein wird in Pflegezeit
+bezahlt, nicht in Euro** — und nur, was den Termin-Deckel von 3 hält, kommt rein.
+
+### ✅ Übernommen
+
+| Baustein | Umsetzung | Preis in Pflegezeit |
+|---|---|---|
+| **Clematis konsequent als Partnerpflanze** | Statt 2 jetzt **4 Clematis** — auch F2 und F6 bekommen eine, im Farbwechsel violett/weiß. Der Grundgedanke ist richtig: *Clematis viticella* fällt auf **denselben Februar-Termin** wie alles andere Holz, bringt also Blüte fast umsonst. | +30 min, **kein neuer Termin** |
+| **Gras im Sockel** | ***Carex oshimensis* 'Everest'**, 9 Stück im gleichmäßigen Abstand über die ganze Länge. War die stärkste Einzelidee: dem Sockel fehlte Winterstruktur, und ein Gras liefert sie immergrün. | +5 min (auskämmen) |
+| **Rhythmus statt Blöcke im Sockel** | Die Segge zieht sich als Taktgeber alle ~2 m durch die gesamte Reihe. Ohne sie zerfiel der Sockel in zwei unverbundene Zonen. Gestalterisch der beste Punkt des Vorschlags. | 0 |
+| **„Blüten von Frühjahr bis Herbst"** | Berechtigter Einwand — von Februar bis April blühte im Plan **nichts**. Geschlossen mit **~100 Krokussen**, die jetzt im September mitgesteckt werden. | 0 |
+
+### ❌ Nicht übernommen
+
+**Kletterrose.** Nicht wegen der Dornen — es gibt nahezu dornenlose Sorten ('Ghislaine de Féligonde',
+'Veilchenblau'), das allein wäre lösbar. Der Ausschlussgrund ist **derselbe Standortbefund, der
+schon die Rebsorte bestimmt hat**: ohne Morgensonne bleibt das Laub bis mittags nass. Für Rosen ist
+das die Lehrbuchbedingung für **Sternrußtau und Mehltau** — sie stehen ab August kahl da, oder man
+spritzt. Dazu ein eigenes Schnittregime (Frühjahrsschnitt, Sommer-Ausputzen, Herbst): **+1 bis +2
+Termine**. Eine Rose an dieser Wand ist die teuerste Pflanze im ganzen Vorschlag, gemessen in
+Aufwand pro Blütenmonat.
+
+**Lavendel und Katzenminze im Sockel.** Beide wollen es trocken und mager. Auf einer Reihe, die
+ab April regelmäßig getropft wird, gehen sie über die Jahre zurück — in nassen Wintern fallen sie
+ganz aus. Das war bereits in Version 2 entschieden und gilt unverändert.
+
+**Storchschnabel** stand nie zur Debatte — er ist seit Version 2 drin, nur in der kompakten Art
+(*Geranium* × *cantabrigiense*) statt der breitwüchsigen.
+
+**4–5 Abschnitte mit wechselnden Kletterern** ist im Kern genau der bestehende Feldplan — nur an den
+7 realen Zaunelementen ausgerichtet statt an gedachten Metermarken. Die Feldgrenzen sind durch die
+Pfostenfundamente ohnehin vorgegeben; jede andere Einteilung würde gegen die Konstruktion arbeiten.
 
 ---
 
@@ -316,11 +383,12 @@ und damit genau das Naschthema für das Jahr, bevor Wein und Brombeere tragen. ~
 
 | Position | Betrag |
 |---|---|
-| 9 Kletterpflanzen (3–7,5 l Container) | 200–320 € |
-| ~21 Stauden (12× *Geranium cantabrigiense*, 9× Monatserdbeere) | 100–140 € |
+| 11 Kletterpflanzen (3–7,5 l Container) | 240–380 € |
+| 28 Stauden (10× *Geranium cantabrigiense*, 9× Monatserdbeere, 9× *Carex* 'Everest') | 160–220 € |
+| ~100 Krokuszwiebeln | 20–30 € |
 | Kompost, Hornspäne, Mulch, Bindematerial | 80 € |
 | Tropfbewässerung 20 m druckkompensiert + Filter/Druckminderer/Timer | 120–200 € |
-| **Summe** | **500–740 €** |
+| **Summe** | **620–910 €** |
 | Optional (Entscheidung Herbst 2027): Blattmatten F3–F5 | +380–670 € |
 
 ---
@@ -403,4 +471,11 @@ Tropfstrang für die Sockelreihe. Der Feldplan bleibt unverändert.
   (3) Wintergrün-Quote 40–45 % nicht ableitbar (real ~21–29 %) → Umbau auf zwei Blöcke, jetzt
   nachrechenbar 57 %;
   (4) Zeitachse 18 Monate falsch (real 3–4 Jahre) → Blattmatten-Empfehlung gedreht.
+- **Version 4:** kein erneutes Gegengutachten — die Änderung ist ein begrenztes Delta an einem
+  bereits geprüften Konzept (+2 Clematis, +1 Staudenart, +Zwiebeln, keine neue Kletterart, kein
+  neuer Termin). **Einschränkung, die der Leser kennen muss:** das Delta zeigt in dieselbe Richtung,
+  vor der das Gutachten gewarnt hat („zu viele Arten"), und es wurde vom selben Autor bewertet, der
+  den Aufwand vorher unterschätzt hatte. Deshalb ist die Zeitrechnung oben offengelegt statt
+  zusammengefasst. Wer das nicht ausreicht, sollte vor der Bestellung ein zweites Gutachten laufen
+  lassen.
 - `.sde_docs/config` nicht vorhanden — Lauf auf Defaults.

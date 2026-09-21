@@ -331,10 +331,48 @@ im Unterschied zur Rückseitenverschraubung, die in keinem Regelwerk vorkommt.
 | Parameter | Festlegung | Begründung |
 |---|---|---|
 | Schraube | **A4 Senkkopf, Vollgewinde — Länge nach Messung, s. u.** | schräg ~45° durch den Federgrund |
+| **Typ/Produktname** | **"Fassadenschraube A4" / "Universalschraube A4"**, ~3,5–4,0 mm, TX-Antrieb, **scharfe Spitze — ausdrücklich OHNE „Bohrspitze"/„für Alu-Unterkonstruktion"-Zusatz** | s. Korrekturbox unten |
 | Vorbohren Holz | Ø 3,0 mm | Fichte spaltet an der Feder sonst |
 | Vorbohren Alu | Ø 3,2 mm | gewindefurchender Sitz im Aluminium |
 | Anzahl | **1 Schraube je Brett und Traglinie** = 3 pro Brett | s. u. |
 | Abstand zum Brettende | ≥ 30 mm | Krages / Osmo |
+
+**Korrektur zur Spitze — Bohrspitze ist hier falsch:** Eine "Bohrspitze" (Terrassenschraube
+für Alu-Unterkonstruktion) hat einen eigenen, ungewindeten Bohrabschnitt vorn — gedacht, um sich
+durch eine dünne Alu-Wand (typ. 2–3 mm) komplett durchzubohren, bevor das Gewinde greift. Bei uns
+ist das Loch aber ein **Sackloch mit nur 3–4 mm nutzbarer Tiefe** (absichtlich nicht durchbohrt,
+sonst zu nah am Stahl). Ist die Bohrspitze länger als dieses Sackloch — durchaus üblich, da sie
+fürs Durchbohren dimensioniert ist — sitzt am Ende genau der ungewindete Teil: **kein Halt**, und
+weiter eindrehen heißt entweder Steckenbleiben/Abreißen oder zu nah an den Stahl.
+
+**Da beide Löcher ohnehin vorgebohrt werden (Holz Ø 3,0, Alu Ø 3,2), wird keine Bohrfähigkeit
+gebraucht.** Gesucht ist eine Schraube mit **scharfer, ungebohrter Spitze** — Gewinde läuft fast
+bis zur Spitze durch, kein separater toter Bohrabschnitt. Formt im vorgebohrten Alu-Loch über die
+volle nutzbare Tiefe Gewinde. Produktkategorie: gewöhnliche A4-Fassaden-/Universalschraube, **ohne**
+"Bohrspitze"/"für Alu-UK"-Kennzeichnung.
+
+#### Konkretes Bezugsprodukt — geprüft
+
+**"Spanplattenschraube A4, Vollgewinde, Senkkopf, TX20, Ø 4 mm"** — Standard-Handelsware, kein
+Spezialprodukt. Zwei verifizierte Quellen mit passenden Eckdaten:
+
+| Quelle | Bestätigt | Längen im Programm |
+|---|---|---|
+| [schraubenhandel24.de — Spanplattenschrauben A4 Vollgewinde TX](https://www.schraubenhandel24.de/schrauben/spanplattenschrauben/art-9047/art-9047-spanplattenschrauben-tx-edelstahl-a4-vollgewinde-4/) | A4, Senkkopf 90°, TX20, Vollgewinde, durchgehendes Holzgewinde (kein Bohrabschnitt), ETA 11/0283 | 10–80 mm in 5-mm-Schritten, u. a. **16 / 20 / 25 mm** |
+| [schraubenhimmel.de — Spanplattenschrauben A4 TX20 Vollgewinde](https://www.schraubenhimmel.de/schrauben/senkkopf/spanplattenschrauben-tx/) | gleiches Programm, bestätigt zusätzlich: A4 ist weicher als verzinkter Stahl → Vorbohren nötig (deckt sich mit Ø 3,0/Ø 3,2 hier) | u. a. **16 mm**, 25 mm, 45 mm+ |
+
+**Wichtig — bei diesem Produkt bewusst in Kauf genommen:** Das Gewinde ist fürs Holzfaser-Fassen
+optimiert, nicht als eigens fürs Metall-Gewindeformen ausgelegtes Profil. Bei der hier anfallenden
+Last (224 N Bemessungswert je Schraube, s. u.) reicht das im vorgebohrten Ø-3,2-Loch aus — Standard-
+praxis bei so geringer Last, nicht das theoretische Optimum fürs Alu.
+
+**Vor der Bestellung der vollen Charge (~150 Stk.):**
+1. Spitze am Produktfoto/an der Verpackung ansehen — durchgehend gewindet, **kein** glatter
+   Abschnitt vorn. Sonst gilt die Korrektur oben (Bohrspitze) und das Produkt ist ungeeignet.
+2. Bei der konkret gewählten Länge (16/20/25 mm) die Angaben Material/Kopf/Antrieb auf der
+   jeweiligen Produktseite gegenprüfen — bei sehr kurzen Varianten weichen manche Hersteller in
+   Kleinigkeiten ab.
+3. Erst eine kleine Menge/Packung zum Probebohren (s. u.), dann erst die volle Charge.
 
 #### Schraubenlänge — Formel statt fixer Zahl, weil sie von der Federlage abhängt
 
@@ -583,6 +621,10 @@ und der Sockel ist nicht als Verschleißreihe tauschbar) ist bekannt und wird in
 - q_p Windzone 2 Binnenland — https://www.mauerwerksbau-lehre.de/vorlesungen/3-sicherheitskonzept-und-einwirkungen/32-einwirkungen/323-wind
 - Führungsrollen, beidseitige Einspannung — https://patents.google.com/patent/EP0596362A2/de
 - proHolz Austria, Zuschnitt 23 (Gegenposition zur Fichte-Skepsis) — https://www.proholz.at/zuschnitt/23/es-kommt-drauf-an
+- Bezugsprodukt Holz-Alu-Schraube (Spanplattenschraube A4 Vollgewinde TX) — https://www.schraubenhandel24.de/schrauben/spanplattenschrauben/art-9047/art-9047-spanplattenschrauben-tx-edelstahl-a4-vollgewinde-4/ · https://www.schraubenhimmel.de/schrauben/senkkopf/spanplattenschrauben-tx/
+- DIN 7500 Kopfmaße (M4/M5, Alu-Stahl-Verbindung) — https://www.schrauben-lexikon.de/download/t_7500mtx-a2.pdf
+- Vorbohrwerte gewindefurchende Schrauben — https://www.lederer-online.com/technik/montagehilfe/vorbohrwerte/
+- Blindnietmutter Setzen (5-Schritte, Bohrlochdurchmesser) — https://www.gesipa.de/service/gesipa-erklaert/blindnietmutter-setzen-einfacher-leitfaden/
 
 ### Belegstatus — was nicht abgesichert ist
 
