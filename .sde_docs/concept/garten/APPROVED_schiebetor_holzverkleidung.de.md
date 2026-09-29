@@ -1,8 +1,31 @@
 # Konstruktionskonzept: Fichte-Verkleidung auf freitragendem Stahl-Schiebetor (6,0 × 1,90 m)
 
-📌 **Status:** DRAFT — **Version 2** (nach unabhängiger Widerlegung grundlegend überarbeitet)
+📌 **Status:** APPROVED — **Version 3** (Final-Prüfung vor Bestellung; freigegeben durch Nutzer 2026-09-23, Einkauf Alu/Nietmuttern/Schrauben freigegeben)
 📅 **Erstellt:** 2026-09-09
 🎯 **Ziel:** Opferschicht-Prinzip — Holz ist Verschleißteil, die Alu-Ebene bleibt dauerhaft
+
+> **Version 3 — Final-Prüfung vor der Bestellung von Alu, Nietmuttern und Schrauben.**
+> Vier Befunde ändern die Bestellung. Alle nachrechenbar, keiner ist Geschmackssache:
+>
+> | v2 | Warum falsch | v3 |
+> |---|---|---|
+> | **Flachprofil 40 × 6**, 4 Löcher je 2-m-Segment | Nie nachgewiesen: Bei Windsog (Wind von der Hausseite) zieht das Holz die Leiste **vom Stahl weg** — sie spannt dann in ihrer schwachen Achse (W = 240 mm³) von Loch zu Loch. Mittlere Linie trägt als Mittelauflager eines Zweifeldträgers 1,25 × 0,95 = 1,19 m Einzugshöhe. Ergebnis: σ_d = **165 N/mm²** (Zone B) bzw. **271 N/mm²** (Zone A) gegen f_o/γ_M1 = 150/1,1 = **136 N/mm²**; Durchbiegung charakteristisch **8–13 mm** | **Flachprofil 40 × 8**, **5 Löcher je Segment** (Raster 450 mm): σ_d = 79 (B) / 130 (A) N/mm², w_k = 2–3 mm |
+> | Senkkopf M6 an den **Gleitpunkten**, mit Feder-/Planscheibe darunter | Ein Senkkopf **zentriert sich im Kegel** — er kann im überweiten Loch nicht gleiten, egal wie weit das Loch ist. Eine Scheibe unter einem bündigen Senkkopf ist geometrisch unmöglich | Gleitpunkte: **Flachkopf ISO 7380 in Flachsenkung Ø 11**, Festpunkt: Senkkopf |
+> | Festpunkt „mittig", Raster 200/750/1250/1800 | Das Raster hat **kein Loch in der Mitte** — der mittige Festpunkt war nicht setzbar | Raster **100/550/1000/1450/1900**, Festpunkt = Loch bei 1000 |
+> | 3 × 2,00 m + 2 × 10 mm Fuge je Linie | = **6,02 m** auf einem 6,00-m-Rahmen | Segmentlänge **nach Aufmaß kürzen**, s. Bauteil A |
+>
+> Dazu: **M5 statt M6** (kleinere Bohrung im Stahl, A4-M5 von Hand sicher setzbar — A4-M6 schafft selbst
+> das Gesipa FireFox 1F nicht), **geschlossene** Nietmutter (kein Wasserweg ins Rohr), Holzschrauben-Höhe
+> so gelegt, dass sie die Metallschraubenköpfe nicht treffen kann. Die Einkaufsliste steht jetzt
+> bestellfertig unter „📦 Einkaufsliste".
+>
+> **4 mm Dicke?** Nein — dreifach ausgeschlossen: W = 107 mm³ (Spannung 2,25× höher als bei 6 mm, das
+> schon versagt), kein Platz für eine Senkung, und die Holzschraube braucht 4–5 mm Sackloch **ohne**
+> den Stahl zu erreichen.
+
+---
+
+> **Version 2 (Stand 2026-09-09) — Historie:**
 
 > **Version 2 ist eine Verkleinerung und eine Korrektur, keine Erweiterung.**
 > Eine unabhängige Prüfung hat Version 1 mit `BLOCK` bewertet. Drei Kernentscheidungen waren falsch,
@@ -14,7 +37,7 @@
 > | **Rückseitenverschraubung** | Traglinien liegen auf den Stahlriegeln — **dahinter ist Stahl, es gibt keine Rückseite**. Nicht bei der Montage, nicht beim Brettwechsel | **Verdeckte Schrägverschraubung durch die Feder** |
 > | **4 Traglinien** | Die Zusatzlinie war der einzige frei spannende Bauteil und fiel im Durchbiegungsnachweis durch (9,3 mm gegen 6,0 mm zulässig). Sie löste ein Problem, das rechnerisch nicht existiert: das Brett hat bei 950 mm **Faktor 10 Reserve** | **3 Traglinien** auf den vorhandenen Riegeln |
 >
-> Weitere korrigierte Rechenfehler aus v1: Lochspiel Ø 8 um M6 ist **1,00 mm**, nicht 1,25 mm ·
+> Weitere korrigierte Rechenfehler aus v1: Lochspiel Ø 8 um M6 (v2-Stand; v3: M5) ist **1,00 mm**, nicht 1,25 mm ·
 > Windlast-Interpolation ergibt **10,7 kN**, nicht die als Alternative genannten 13,0 kN ·
 > Schraubennachweis war über die Windzonen gemittelt (Faktor 10 behauptet, real **2,3**) ·
 > die 20-mm-Hinterlüftung nach DIN 18516-1 war auf einen Fall zitiert, für den die Norm nicht gilt.
@@ -38,7 +61,7 @@ Löcher, nicht der Stahl.**
 
 ### Akzeptanzkriterien — mit ehrlichem Erfüllungsgrad
 
-| # | Kriterium | v2 |
+| # | Kriterium | v3 |
 |---|---|---|
 | A1 | Verbindung Alu ↔ Stahl übersteht Jahrzehnte ohne Kontaktkorrosion | ⚠️ **eingeschränkt** — siehe Bauteil B, die Bohrung im Stahl bleibt der Schwachpunkt |
 | A2 | Holz kann quellen/schwinden ohne Zwang | ⚠️ **abhängig von der ungemessenen Holzfeuchte** — siehe O1 |
@@ -112,7 +135,7 @@ Dieses Vorhaben liegt bei ~10,5 kg/m² und 0 %.
 
 ### Leitidee
 
-**Drei Alu-Flachprofile 40 × 6 mm, deckungsgleich auf die drei vorhandenen Stahlriegel geschraubt.
+**Drei Alu-Flachprofile 40 × 8 mm, deckungsgleich auf die drei vorhandenen Stahlriegel geschraubt.
 Die Bretter werden verdeckt schräg durch die Feder in das Alu geschraubt — der belegte Regelfall der
 Nut-Feder-Fassadenmontage.**
 
@@ -126,16 +149,16 @@ zugehörigen horizontalen Stahlriegel:
 ```
         Stahlrohr           Alu-Flach   EPDM    Holz 21 mm
      ┌──────────────┐      ┌────────┐ ┌────┐ ┌──────────┐
-     │              │      │ 6 mm   │ │0,8 │ │          │
+     │              │      │ 8 mm   │ │0,8 │ │          │
      │  40 × 40 mm  │──────│ direkt │─│ mm │─│  Fichte  │
      │   Stahlriegel│ bündig│aufge-  │ │    │ │  sichtbar│
      │              │ auf-  │schraubt│ │    │ │          │
      └──────────────┘ liegend└────────┘ └────┘ └──────────┘
         (Innenseite)                              (Außenseite)
-     ◄── Rahmentiefe ──►◄─ 6 ─►◄0,8►◄──── 21 ────►
+     ◄── Rahmentiefe ──►◄─ 8 ─►◄0,8►◄──── 21 ────►
 ```
 
-Gesamtaufbau in der Tiefe: Stahl-Vorderfläche → Alu 6 mm (flächig aufliegend, verschraubt) →
+Gesamtaufbau in der Tiefe: Stahl-Vorderfläche → Alu 8 mm (flächig aufliegend, verschraubt) →
 EPDM 0,8 mm → Holz 21 mm (sichtbare Außenfläche). Das Alu ist damit selbst Teil der Rahmenebene,
 kein vorgesetztes, freistehendes Element — das war auch der Grund, ein Flachprofil statt eines
 Rechteckrohrs zu wählen (s. u.).
@@ -184,12 +207,48 @@ das einen eigenen Tragnachweis gebraucht hätte.
 
 | Parameter | Festlegung | Begründung |
 |---|---|---|
-| Profil | **Flachprofil 40 × 6 mm**, EN AW-6060 | 0,648 kg/m → 3 × 6 m = **11,7 kg** |
+| Profil | **Flachstange 40 × 8 mm, EN AW-6060 T66** (AlMgSi0,5 F22), blank | 0,864 kg/m → 18 m = **15,6 kg** (v2: 11,7 kg). Handelsübliche Metallbau-Qualität, Rp0,2 ≥ 150 N/mm² ([Dold](https://www.dold-mechatronik.de/Flachstange-40x8mm-Aluminium-EN-AW-6060-T66-(AlMgSi0,5)-0,91kg-m,-Zuschnitt-20-6000mm), [IBL](https://shop.ibl-raimund.de/Alu/Flachstangen/Metallbau-AlMgSi0-5-6060-T66/Flachstange-AlMgSi0-5-6060-F22-BreitexStaerke-40x8-mm.html)) |
 | Oberfläche | **blank genügt** (EN AW-6060 bildet selbst eine Oxidschutzschicht) | Vom Stahlriegel weitgehend verdeckt. Beschichtung auf der Anode bringt laut MB 829 nichts und schadet bei Beschädigung. Blanke Kanten von innen ggf. mit Ausbesserungslack übermalen |
-| **Warum flach, nicht Rohr** | 6 mm massiv | Die Schraube muss durch das Alu ins Holz bzw. in die Nietmutter — ein geschlossenes Rohr legt 20 mm Hohlraum dazwischen. **Das war der tödliche Fehler in v1** |
-| **Warum 6 mm, nicht 5** | Senkkopf M6 braucht ~3,3 mm Senktiefe | Restwand 2,7 mm. Der M6-Kopf liegt **bündig** — die Brettrückseite liegt plan auf, keine 45 Beulen unter der Verkleidung |
+| **Warum flach, nicht Rohr** | massiv | Die Schraube muss durch das Alu ins Holz bzw. in die Nietmutter — ein geschlossenes Rohr legt 20 mm Hohlraum dazwischen. **Das war der tödliche Fehler in v1** |
+| **Warum 8 mm, nicht 6 — und schon gar nicht 4** | Windsog-Nachweis, s. u. | 40 × 6 ist mit dem v2-Raster überlastet (σ_d 165–271 N/mm² gegen 136) und bräuchte ~7 Löcher je Segment = **63 Bohrungen im Stahl** statt 45. Jede Stahlbohrung ist der erklärte Schwachpunkt (A1) — dickeres Alu ist die billigere Reserve als mehr Löcher. 8 mm gibt außerdem ≥ 4,5 mm Sicherheitsabstand zwischen Holzschraubenspitze und Stahl (Bauteil C) und Platz für eine Flachsenkung mit 5 mm Restwand |
 | **Warum flach, nicht Winkel** | — | Ein Winkel hätte einen nach oben offenen Schenkel = 6 m Wasserbrett. Ein Flachprofil hat gar keinen Schenkel. **Antwort auf „Winkel oder Profile?": Flachprofil, weder noch** |
-| Segmentierung | **bis 2,0 m, an die Lagerlänge angepasst** (Handelsware kommt als 2,0-m-Stangen -> 0 % Verschnitt), 10 mm Stoßfuge | s. u. |
+| Segmentierung | **3 Segmente je Linie, 9 gesamt.** Länge L_seg = (Rahmenbreite − 2 × 5 mm Randrücksprung − 2 × 10 mm Stoßfuge) / 3. **Bei 6000 mm Rahmen: 1990 mm** | 2,0-m-Stangen passen — sie werden um ~10 mm gekürzt, nicht verlängert. **Rahmenbreite vor der Bestellung messen** und entweder 9 × 2000 mm kaufen und selbst kürzen oder direkt 9 × L_seg zuschneiden lassen |
+
+#### Windsog-Nachweis der Leiste — fehlte in v2
+
+Wind von der Hausseite drückt die Verkleidung nach außen. Die Holzschrauben ziehen die Leiste dann
+**vom Stahl weg**, gehalten nur an den Nietmuttern. Zwischen zwei Löchern spannt das Flachprofil in
+seiner **schwachen Achse** (40 breit, t hoch). Die Aussage aus v2 „die Profile tragen nichts ab" gilt
+nur für Winddruck von außen.
+
+```
+Mittlere Linie = Mittelauflager des Brettes (Zweifeldträger): Einzug 1,25 × 0,95 m = 1,19 m
+q_d Zone A = 0,65 × 2,35 × 1,19 × 1,5 = 2,73 N/mm     Zone B: 0,65 × 1,43 × 1,19 × 1,5 = 1,66 N/mm
+Widerstand EN AW-6060 T66: f_o / γ_M1 = 150 / 1,1 = 136 N/mm²
+```
+Stabwerksrechnung je Segment (Löcher als gelenkige Auflager, Segmente an den Stoßfugen getrennt):
+
+| Variante | σ_d Zone A | σ_d Zone B | w_k Zone B | Nietmutter-Last R_d |
+|---|---|---|---|---|
+| 40 × 6, 4 Löcher 200/750/1250/1800 (v2) | **271** ❌ | **165** ❌ | 8,0 mm | 0,9–1,5 kN |
+| 40 × 6, 5 Löcher, 450er Raster | **231** ❌ | 140 ❌ | 4,8 mm | 0,8–1,4 kN |
+| 40 × 8, 4 Löcher (v2-Raster) | **152** ❌ | 93 ✅ | 3,4 mm | 0,9–1,5 kN |
+| **40 × 8, 5 Löcher, 450er Raster (v3)** | **130** ✅ | **79** ✅ | **2,0 mm** | **0,8–1,4 kN** |
+
+Zone A (Windrandzone, ≤ 0,57 m ab Torende) ist hier konservativ auf ein ganzes Segment angesetzt.
+Obere und untere Linie tragen nur ~0,4–0,5 m Einzugshöhe und sind mit demselben Raster unkritisch —
+gleiches Raster überall, damit es nur ein Bohrbild gibt. *(Rechnung: `scratchpad/beam.py`,
+Balken-FE je Segment; Werte gerundet.)*
+
+#### Bohrbild je Segment
+
+| | Festlegung |
+|---|---|
+| **Lage längs** | **Festpunkt in der Segmentmitte**, je 2 Gleitpunkte links/rechts im Abstand **450 mm**; äußere Löcher ~95–100 mm vom Segmentende. Bei L_seg = 1990: **95 / 545 / 995 / 1445 / 1895 mm** |
+| **Lage in der Höhe** | Nietmutter-Reihe **14 mm über der Unterkante** der Leiste. Die Holzschrauben sitzen **8 mm unter der Oberkante** (Bauteil C) → mind. 7 mm Abstand zwischen Holzschraube und Metallschraubenkopf/Senkung. *(v2 hatte beide auf Mitte — bei ~48 Federn auf 45 Köpfen wären rechnerisch 5–7 Holzschrauben auf einen M-Kopf getroffen)* |
+| **Festpunkt (1 je Segment)** | Ø **5,5 mm** + Kegelsenkung 90° für Senkkopf M5 (Kopf Ø 10, Tiefe ~2,8 mm, bündig) |
+| **Gleitpunkte (4 je Segment)** | Ø **6,6 mm** + **Flachsenkung Ø 11 × 3,0 mm** (Zapfensenker DIN 373 „M6 mittel", Führungszapfen 6,6) für Flachrundkopf ISO 7380 M5 (Kopf Ø 9,5 × 2,75) |
+| Summe | 9 Segmente × 5 = **45 Nietmuttern** (9 Fest-, 36 Gleitpunkte) |
 
 **Wärmedehnung:**
 ```
@@ -198,36 +257,31 @@ das einen eigenen Tragnachweis gebraucht hätte.
 Differenz über 6,0 m                =  6,66 mm
 ```
 
-**Wichtig — und in v1 falsch behandelt:** Die Zwangsspannung bei starrer Fesselung ist
-σ = E·Δα·ΔT ≈ **78 N/mm² und hängt nicht von der Segmentlänge ab**. Kurze Segmente allein helfen
-nicht. Ein 40 × 6-Flachprofil beult bei 600 mm Befestigungsabstand schon bei σ ≈ 6 N/mm² aus.
-**Die Verschiebung muss also tatsächlich stattfinden können — Langlöcher sind nicht optional.**
+Starr gefesselt würde die Differenz eine Zwangskraft von σ = E·Δα·ΔT ≈ 35 N/mm² (±45 K) × 320 mm²
+≈ **11 kN je Segment** erzeugen — unabhängig von der Segmentlänge, und sie ginge als Querkraft in die
+äußeren Nietmuttern einer 2-mm-Rohrwand. Ausknicken kann die Leiste dagegen nicht: sie liegt zwischen
+Stahl und verschraubtem Holz. *(Das v2-Argument „beult bei 6 N/mm² aus" übersah diese Sandwich-Lage;
+die Schlussfolgerung — Gleitpunkte nötig — bleibt richtig, nur aus dem anderen Grund.)*
 
-- **Ein Festpunkt je Segment, MITTIG im Segment** (enges Rundloch: Ø 5,5 bei M5 / Ø 6,5 bei M6)
-- **Alle übrigen Punkte: leicht überweites Rundloch** — Ø 7 bei M5, Ø 8 bei M6. **Kein Langloch nötig** — s. u.
-- Bedarf am freien Ende bei 2,0 m Segment (Festpunkt am Ende): `2000 × 11,1·10⁻⁶ × 100 K = 2,22 mm`. Langloch 6,5 × 14 um M5 gibt ±4,5 mm Spielweg → massig Reserve.
-- Stoßfugen über einem senkrechten Stahlstab sind ein Komfortmerkmal, kein Muss: die Fuge trägt nichts, ist 10 mm breit, hinter dem Holz, nur von innen sichtbar. Deshalb Lagerlänge vor Pfostenraster.
+**Gleiten muss tatsächlich möglich sein — und ein Senkkopf kann das nicht.** Der Kegel zentriert
+die Schraube in der Senkung; das überweite Loch darunter ist wirkungslos. Deshalb:
 
-**Warum kein Langloch:** Mit dem Festpunkt mittig im 2,0-m-Segment ist der äußerste Befestigungspunkt
-nur 1,0 m entfernt. Bei realistischem Einbau (~15 °C, Bereich −20…+80 °C) bewegt sich dieser Punkt
-+0,72 mm im Sommer / −0,39 mm im Winter. Ein Ø-7-Rundloch um eine M5 (bzw. Ø 8 um M6) gibt ±1,0 mm
-radiales Spiel — deckt das mit Reserve. Das spart das Ausfeilen/Fräsen von ~24 Schlitzen: nur zwei
-Bohrerdurchmesser, sonst nichts. Voraussetzung ist wirklich der **mittige** Festpunkt; sitzt er am
-Ende, wächst der Abstand auf 2,0 m und das Rundloch wird zu knapp.
+- **Festpunkt:** Senkkopf M5 in engem Loch Ø 5,5 — hält das Segment in Position.
+- **Gleitpunkte:** Flachrundkopf M5 auf **ebenem** Grund einer Flachsenkung Ø 11. Radiales Spiel:
+  Schaft 5 in Ø 6,6 = **±0,8 mm**, Kopf 9,5 in Ø 11 = **±0,75 mm**.
+- **Bedarf** am äußersten Gleitpunkt (900 mm vom Festpunkt), Einbau ~15 °C, Bereich −20…+80 °C:
+  `900 × 11,1·10⁻⁶ × 65 K = +0,65 mm` / `× 35 K = −0,35 mm` → **gedeckt**.
+- **Kein Langloch, keine Federscheibe, keine Planscheibe.** Gleitpunkte **handfest + ~¼ Umdrehung**
+  (≈ 2–3 Nm), Gewinde mit **mittelfester Schraubensicherung** (z. B. Loctite 243) — hält das moderate
+  Anzugsmoment über die Temperaturzyklen und verhindert zugleich Fressen A4 in A4.
 
 **Beim Anzeichnen vor Ort:**
 - **Senkrechte Stäbe meiden.** Wo ein senkrechter Rahmenstab den Riegel kreuzt (~alle 1,2 m,
-  geschweißt), darf kein Loch sitzen. Landet eine der vier Positionen dort: Loch um ±50 mm
-  verschieben (der 550-mm-Abstand hat den Spielraum). Festpunkt wahlweise bei 750 **oder** 1250 mm.
-- **Löcher der drei Riegel gegeneinander versetzen** — den mittleren Riegel ~100 mm versetzt
-  anreißen, verteilt die Löcher besser über den Rahmenquerschnitt.
-- **Gleitpunkte nur mäßig anziehen, mit planer A4-Scheibe (kein Gummi unter dem Kopf).** Ein
-  festgezogener Gleitpunkt ist reibschlüssig geklemmt und gleitet nicht — die Abdichtung des
-  Bohrlochs erfolgt deshalb **am Stahl**, nicht unter dem Schraubenkopf (Bauteil B)
-- Stoßfugen möglichst über einem senkrechten Stahlstab
-
-*(v1 rechnete hier mit „Ø 8 um M6 = ± 1,25 mm Spiel". Richtig sind **1,00 mm** — und damit weniger
-als der Bedarf. Der Fehler ist mit dem Langloch erledigt.)*
+  geschweißt), darf kein Loch sitzen. Gleitpunkt dann um bis zu ±50 mm verschieben (Nachweis hält
+  bis ~500 mm Lochabstand). **Der Festpunkt bleibt in der Mitte**; liegt dort ein Stab, das
+  ganze Bohrbild um ≤ 50 mm verschieben.
+- **Schweißnähte / Überstände** an den Kreuzungen prüfen (O7) — die Leiste muss plan aufliegen.
+- Stoßfugen über einem senkrechten Stahlstab sind ein Komfortmerkmal, kein Muss.
 
 ---
 
@@ -247,7 +301,7 @@ Große Alu-Anode, kleine Edelstahl-Kathode — Tab. 7 bewertet das mit „+". Hi
 **Stelle 2 — die tatsächlich kritische, in v1 übersehen: die Bohrung im Stahlrohr.** Dort sitzt die
 A4-Blindnietmutter formschlüssig gegen die **blanke, frisch gebohrte Wandung des Baustahlrohrs**,
 im Hohlraum eines geschlossenen Profils, in dem Kondensat steht und schlecht abtrocknet.
-Flächenverhältnis: ~38 mm² blanker Stahl (Anode) gegen die deutlich größere A4-Fläche (Kathode) —
+Flächenverhältnis: ~44 mm² blanker Stahl (Bohrung Ø 7 × 2 mm Wand; bei M6/Ø 9 wären es ~57 mm²) als Anode gegen die deutlich größere A4-Fläche (Kathode) —
 **kleine Anode an großer Kathode, das ungünstige Verhältnis.** Genau der Mechanismus, den MB 829 §6
 beschreibt:
 
@@ -259,12 +313,28 @@ Alu-Vorderseite und deckt am Stahl nichts ab** — sie war wirkungslos.
 
 | Parameter | Festlegung | Begründung |
 |---|---|---|
-| Verbindungsmittel | **Blindnietmutter M6 A4** + **Senkkopfschraube M6 × 16 A4** | 6 mm Alu + ~10 mm Gewinde. Lösbar, kein Fremdmaterial verbleibt |
-| **A4 statt A2** | 1.4401 statt 1.4301 | Zufahrt = Streusalz. abZ Z-30.3-6: A2 = KWK II „ohne nennenswerte Chloridbelastung", A4 = KWK III „bei Tausalz" |
-| **Abdichtung am Stahl** | **Nietmutter-Flansch in MS-Polymer / Butyl einbetten, vor dem Setzen** | Verschließt den Wassereintritt **dort, wo er entsteht** — nicht 6 mm weiter außen |
-| Unter dem Schraubenkopf, Festpunkt | plane A4-Scheibe, voll angezogen | starr, trägt die Konstruktionslast |
-| Unter dem Schraubenkopf, Gleitpunkte | **A4-Federscheibe/Tellerfeder statt planer Scheibe** | gibt unabhängig vom Anzugsmoment eine definierte, moderate Anpresskraft — voll angezogen würde die Reibung den Gleitpunkt trotz überweitem Loch faktisch festklemmen |
-| Raster | **4 Löcher je 2,0-m-Segment: 200 / 750 / 1250 / 1800 mm ab Segmentanfang** (Randabstand 200, Lochabstand 550 mm). Höhe: mittig, 20 mm von jeder Kante. 36 Punkte gesamt | reine Sogbeanspruchung; ~300 N je Punkt (Rand/Bemessung ~720 N) gegen mehrere kN Ausziehwiderstand |
+| Nietmutter | **Blindnietmutter M5, A4, kleiner Senkkopf (reduzierter Flachkopf), geschlossen, Rundschaft — gerändelt, wo lieferbar. Klemmbereich muss die gemessene Wandstärke enthalten (typ. 0,3–3,5 oder 0,5–3,0 mm). Bohrloch Ø 7,0** | Details und Begründung M5/geschlossen/Kopf s. unten |
+| Schraube Festpunkt | **Senkschraube ISO 10642 M5 × 16, A4-70**, Innensechskant | 8 mm Alu + ~0,5 mm Nietmutterkopf + ~7 mm Gewinde |
+| Schraube Gleitpunkte | **Flachkopfschraube ISO 7380-1 M5 × 12, A4-70**, Innensechskant | 5 mm Restwand unter der Flachsenkung + 0,5 + ~6,5 mm Gewinde |
+| **A4 statt A2** | 1.4401/1.4571 statt 1.4301 | Zufahrt = Streusalz. abZ Z-30.3-6: A2 = KWK II „ohne nennenswerte Chloridbelastung", A4 = KWK III „bei Tausalz" |
+| **Abdichtung am Stahl** | **Nietmutter-Kopf beim Setzen in MS-Polymer einbetten, Überstand abwischen, ≥ 24 h aushärten lassen, dann erst Alu montieren** | Verschließt den Wassereintritt **dort, wo er entsteht**. Aushärten *vor* der Alu-Montage ist Pflicht: MS-Polymer ist ein Kleber — nass unter der Leiste würde es die Gleitpunkte festkleben |
+| Unter dem Schraubenkopf | **nichts** | Senkkopf: bündig im Kegel. Flachkopf: direkt auf dem ebenen Senkungsgrund |
+| Raster | s. Bauteil A — 5 je Segment, **45 gesamt** | Bemessung R_d = 0,8–1,4 kN je Nietmutter (v2 schätzte ~300 N/720 N — ohne Zweifeldträger-Faktor) |
+
+#### Warum genau diese Nietmutter
+
+| Merkmal | Wahl | Warum |
+|---|---|---|
+| **Größe M5 statt M6** | M5 | (1) **Bohrung im Stahl Ø 7 statt Ø 9** — 22 % weniger blanke Bohrungswand, d. h. weniger Anodenfläche am erklärten Schwachpunkt. (2) **A4 in M6 ist von Hand kaum setzbar**: selbst das druckluft-hydraulische Gesipa FireFox 1F nennt „M3–M6 alle Werkstoffe **außer M6 Edelstahl**" ([profishop](https://www.profishop.de/p/gesipa-blindnietmuttern-setzgeraet-firefox-1f-m-6-1458198)); Handzangen gehen bei Stahl/Edelstahl oft nur bis M5, für A4-M6 braucht es eine Zweihandzange ([Übersicht](https://www.vergleich.org/nietmutternzange/)). (3) Last 1,4 kN liegt weit unter der Tragfähigkeit einer M5-A4-Verbindung (Zugfestigkeit einer A4-70 M5 ≈ 10 kN) |
+| **geschlossen** | geschlossenes Ende | Eine offene Nietmutter ist ein **Wasserweg** vom Schraubengewinde direkt ins Rohrinnere — genau dorthin, wo Kondensat die Bohrungswand angreift. Geschlossen hält Wasser draußen ([Gesipa: „verhindert das Eindringen von Schmutz und Flüssigkeiten“](https://www.schraubenhimmel.de/nieten/blindnietmuttern/kleiner-senkkopf/72342/gesipa-blindnietmuttern-edelstahl-a4-kleiner-senkkopf-m-5x7x12-5-klemmbereich-0-3-3-5-mm)) |
+| **kleiner Senkkopf** | reduzierter Kopf ~0,5 mm | Liegt ohne Senkung im Stahl auf (keine zusätzliche Stahl-Bearbeitung) und hebt die Leiste nur ~0,5 mm an — der Spalt ist mit dem ausgehärteten MS-Polymer gefüllt. Der „Senkkopf 90°“ bräuchte eine Kegelsenkung **im Stahl** = mehr verletzte Beschichtung; der normale Flachkopf (~1,0–1,5 mm) hebt die Leiste zu weit an |
+| **gerändelt** (wenn lieferbar) | Rändelschaft | Verdrehsicherung beim Anziehen im runden Loch. Nicht lieferbar in A4-geschlossen-M5? Dann Rundschaft — das MS-Polymer im Loch sichert zusätzlich |
+
+**Pflicht-Probe vor der Montage** (mit einer Nietmutter aus der Packung, an einem Stahlrohr-Rest oder
+einer unauffälligen Stelle): setzen, Schraube eindrehen — die M5 × 16 bzw. × 12 darf **nicht am
+geschlossenen Boden aufstehen** (Schraube dreht fest, bevor der Kopf anliegt). Tut sie das: 2 mm
+kürzere Schrauben (× 14 / × 10) nachkaufen. Die Gewindetiefe der geschlossenen Ausführung steht nicht
+auf jedem Datenblatt.
 
 **Ehrliche Bewertung von A1:** Die Bohrung im Stahl ist der Schwachpunkt der ganzen Konstruktion und
 lässt sich **nicht vollständig schützen** — Bohrungswandung und Innenrand im Hohlraum sind nicht
@@ -282,36 +352,12 @@ unten Entwässerungsöffnungen hat; falls nicht, welche setzen.
 **Verworfen: Bimetall-Bohrschrauben.** Die gehärtete Kohlenstoffstahl-Bohrspitze verbleibt im
 Hohlraum und rostet.
 
-#### Alternative bei O6 ≥ 2,5 mm: Direktverschraubung statt Blindnietmutter
+#### Verworfen: Direktverschraubung (gewindefurchend) statt Blindnietmutter
 
-Spart das Setzgerät. Zwei Bohrdurchmesser, deshalb in dieser Reihenfolge:
-
-1. **Alu-Durchgangsloch zuerst, auf der Werkbank** (vor der Montage): ~4,5 mm (M4) bzw. ~5,5 mm (M5),
-   Klemmung, kein Gewinde. Senkung fräsen, Tiefe 2,7 mm (M4/M5, siehe Kopfmaße unten).
-2. **Alu-Profil am Rahmen positionieren, fixieren.**
-3. **Durchs vorhandene Alu-Loch ankörnen** — dient als Bohrbuchse, verhindert Verlaufen.
-4. **Stahl-Kernloch bohren**, durch das Alu-Loch hindurch: Richtwert ~3,3 mm (M4) / ~4,2 mm (M5) —
-   **verbindlich ist die Angabe auf der jeweiligen Schraubenpackung**, DIN 7500 nennt diese Werte
-   ausdrücklich nur als Richtwerte. Nur bis zur Wandstärke, nicht durch die Rückwand.
-5. **Bohrspäne sofort entfernen.**
-6. **Dichtmasse (MS-Polymer/Butyl) auf die Stahloberfläche um das Kernloch auftragen** — vor dem
-   Verschrauben, nicht danach. Sitzt genau an der Stelle, wo die Beschichtung verletzt wird.
-7. **Schraube eindrehen**, mäßiges Drehmoment — gewindefurchende Schrauben brauchen anfangs mehr
-   Kraft, werden leichter, sobald das Gewinde geformt ist. Nicht überdrehen (dünne Wand).
-8. **Kontrolle:** Dichtmasse quillt sichtbar minimal am Rand aus — Zeichen für vollen Anpressdruck.
-
-| Parameter | Festlegung |
-|---|---|
-| Norm/Typ | **DIN 7500, Form M** (Senkkopf, Innensechsrund/TX) |
-| Material | **A4** (1.4401/1.4571) — wegen Streusalz; schlechter gelagert als A2, Lieferzeit einplanen |
-| Durchmesser | **M4** (< 2,5 mm Wand nicht empfohlen) oder **M5** (≥ 2,5 mm) |
-| Kopf-Ø max / Senktiefe | M4: 8,4 / 2,7 mm · M5: 9,3 / 2,7 mm |
-| Antrieb | TX 20 (M4) / TX 25 (M5) |
-| Länge | 6 mm (Alu) + Wandstärke + ~1 mm Reserve → meist 10–12 mm |
-| Alu-Durchgangsloch | ~4,5 mm (M4) / ~5,5 mm (M5) |
-| Stahl-Kernloch | Richtwert ~3,3 mm (M4) / ~4,2 mm (M5) — **Packungsangabe verbindlich** |
-
-Quelle Kopfmaße: [Wegertseder DIN 7500 Datenblatt](https://www.schrauben-lexikon.de/download/t_7500mtx-a2.pdf).
+Bis v2 als Alternative bei Wandstärke ≥ 2,5 mm geführt (DIN 7500 Form M, A4). Mit O6 zugunsten der
+Nietmutter entschieden: Die Direktschraube hängt an einer ungemessenen Wandstärke, formt ihr Gewinde
+in 2–3 mm Baustahl, der danach blank im Hohlraum liegt, und ist nicht nachbesserbar. Außerdem wäre
+sie offen zum Rohrinneren. [Kopfmaße DIN 7500](https://www.schrauben-lexikon.de/download/t_7500mtx-a2.pdf)
 
 ---
 
@@ -384,8 +430,8 @@ Aufbau in der Tiefe, ab der sichtbaren Holzfläche:
 ```
 0 ── 21,0 mm  Holz
 21,0 ── 21,8 mm  EPDM
-21,8 ── 27,8 mm  Alu (6 mm)
-27,8 mm  ──────  Stahl — darf nicht erreicht werden
+21,8 ── 29,8 mm  Alu (8 mm)
+29,8 mm  ──────  Stahl — darf nicht erreicht werden
 ```
 Bei 45° legt die Schraube pro 1 mm Länge nur `sin 45° ≈ 0,71 mm` Tiefe zurück. Die richtige Länge
 hängt davon ab, **wo die Feder im 21-mm-Querschnitt tatsächlich sitzt** — das variiert je nach
@@ -395,17 +441,26 @@ Profil und ist ohne Messung nicht seriös anzugeben:
 L = (Zieltiefe im Alu − Tiefe des Ansatzpunkts an der Feder) / sin(45°)
 ```
 
-Zieltiefe = 21,8 mm (Alu-Anfang) + 3–4 mm Einbindung — **nicht mehr**, sonst zu nah am Stahl.
+Zieltiefe = 21,8 mm (Alu-Anfang) + 4–5 mm Einbindung = **25,8–26,8 mm** — bleibt ≥ 3 mm vor dem Stahl (29,8 mm).
 
-| Federlage (Ansatzpunkt) | Schraubenlänge für 3–4 mm Alu-Einbindung |
-|---|---|
-| eher vorn (~7 mm Tiefe) | ~25–27 mm |
-| mittig (~10,5 mm Tiefe) — typischer Richtwert | ~20–22 mm |
-| eher hinten (~14 mm Tiefe) | ~15–17 mm |
+| Federlage (Ansatzpunkt a) | rechnerisch | **Kauflänge (5-mm-Raster)** | Spitze liegt bei | Einbindung Alu / Rest bis Stahl |
+|---|---|---|---|---|
+| eher vorn (~7 mm) | 27,3 mm | **25 mm** | 24,7 mm | 2,9 mm / 5,1 mm |
+| mittig (~10,5 mm) — typisch | 22,3 mm | **20 mm** | 24,6 mm | 2,8 mm / 5,2 mm |
+| eher hinten (~14 mm) | 17,4 mm | **16 mm** | 25,3 mm | 3,5 mm / 4,5 mm |
 
-**Vorgehen:** Federlage an einem Reststück messen (s. O5), dann mit obiger Formel die Länge
-bestimmen, an einem Probestück mit tiefenmarkiertem Bohrer testen (kein Durchstoß spürbar), **erst
-danach** die Schrauben für das ganze Tor beschaffen.
+Mit 8 mm Alu ist in jeder Federlage **≥ 4,5 mm Abstand zum Stahl** — die Stufe darüber (30/25/20 mm)
+käme auf 1,6 mm heran und ist deshalb **nicht** zu wählen.
+
+**Höhenlage:** Holzschraube **8 mm unter der Oberkante der Leiste** ansetzen (Bohrer waagerecht
+seitlich gekippt, s. Montage). Die Metallschrauben sitzen 14 mm über der Unterkante (Bauteil A) —
+die Holzschraube kann keinen Kopf und keine Senkung treffen.
+
+**Vorgehen:** Federlage an einem Reststück mit dem Messschieber messen (O5, 1 Minute) → Zeile der
+Tabelle wählen → **200 Stück dieser Länge bestellen**. Ist die Messung vor der Bestellung nicht
+möglich: je 100 Stück 20 und 25 mm (Mehrkosten ~10 €). Vor dem Verlegen einmal an einem Brettrest
+auf einem Leistenrest probeschrauben: Ø 3,2 mit Tiefenanschlag, Schraube muss fest ziehen, Leiste
+rückseitig unverletzt.
 
 **Nachweis mit dem Randzonenwert — nicht mit einem Mittelwert:**
 
@@ -414,7 +469,12 @@ Ungünstigstes Brett: 150 mm × 2,0 m, Zone A, 3 Befestigungspunkte
 Einzugsfläche je Schraube = 0,150 × 2,0 / 3   = 0,100 m²
 F_k = 1,495 kN/m² × 0,100 m²                  =  150 N
 F_d = 1,5 × 150                               =  224 N
+Mittlere Linie (Zweifeldträger-Faktor 1,25):
+F_d = 0,150 × 1,19 × 1,495 × 1,5              ≈  400 N
 ```
+Ausziehwiderstand einer Ø-4-Schraube mit ~3 mm geformtem Gewinde in EN AW-6060 T66 grob
+π · 3,4 · 2,8 · 0,6 · 0,6 · 215 ≈ 2 kN → Faktor ~5. *(Abschätzung, kein Herstellerwert — die Probe
+oben ist der eigentliche Nachweis.)*
 Das liegt im normalen Bereich einer Fassaden-Federverschraubung. *(v1 rechnete mit 55 N je Schraube,
 weil es über alle Windzonen gemittelt hatte, und behauptete „Reserve > Faktor 10". Beides war falsch.)*
 
@@ -512,48 +572,78 @@ und der Sockel ist nicht als Verschleißreihe tauschbar) ist bekannt und wird in
 
 ---
 
-## 📦 Materialliste
+## 📦 Einkaufsliste (bestellfertig, Stand v3)
 
-| Pos | Artikel | Menge |
+### Vor dem Klick auf „Bestellen" — drei Messungen, zusammen ~10 Minuten
+
+| # | Messen | Wofür | Womit |
+|---|---|---|---|
+| M1 | **Rahmenbreite** an allen drei Riegeln | Segmentlänge L_seg = (Breite − 30 mm) / 3 → bei 6000 mm: **1990 mm** | Maßband |
+| M2 | **Wandstärke Rahmenrohr** — an einem offenen Rohrende, einer Bohrung oder der Endkappe | muss im Klemmbereich der Nietmutter liegen (typ. 0,3–3,5 mm). Bei 40 × 40 sind 2–3 mm üblich; liegt sie > 3,5 mm, andere Klemmbereich-Variante wählen | Messschieber |
+| M3 | **Federlage** im 21-mm-Querschnitt (Abstand Brettvorderseite → Federmitte) | Holzschraubenlänge, Tabelle Bauteil C | Messschieber an einem Brettende |
+
+### A — Jetzt bestellen: Metallbau
+
+| Pos | Artikel — so in den Shop eingeben | Menge | Bemerkung |
+|---|---|---|---|
+| 1 | **Aluminium Flachstange 40 × 8 mm, EN AW-6060 T66 (AlMgSi0,5), blank** | **9 Stück à L_seg** (bei 6000 mm Rahmen: 9 × 1990 mm) — oder 9 × 2000 mm und selbst kürzen | ~15,6 kg. Zuschnitt auf Maß z. B. bei [Dold Mechatronik](https://www.dold-mechatronik.de/Flachstange-40x8mm-Aluminium-EN-AW-6060-T66-(AlMgSi0,5)-0,91kg-m,-Zuschnitt-20-6000mm) / [aluprofile-express](https://www.aluprofile-express.de/Flachstange-40x8mm-Aluminium-EN-AW-6060-T66-AlMgSi05-091kg-m-Zuschnitt-20-6000mm), [Metallstore](https://www.metallstore.de/aluminium/stange-flach/almgsi0-5-aw-6060/40x8-mm-aluminium-flach-almgsi0-5). **Nicht 40 × 6, nicht 40 × 4** (Bauteil A) |
+| 2 | **Blindnietmutter M5, Edelstahl A4, kleiner Senkkopf, geschlossen**, gerändelt wenn lieferbar, sonst Rundschaft; Klemmbereich enthält M2; Bohrloch Ø 7,0 | **45 + Reserve/Probe → 1 Packung ≥ 60** (Packungen meist 50/100/250) | z. B. [Seimatec 154-1022-519 „M5 × 19, kleiner Senkkopf, A4, Rundschaft geschl."](https://www.schrauben-seimatec.de/blindnietmutter-kleiner-senkkopf-edelstahl-a4-rundschaft-geschl.) oder [kauf-schrauben „kleiner Senkkopf geschlossen gerändelt A4"](https://www.kauf-schrauben.de/blindnietmuttern-kleiner-senkkopf-geschlossen-geraendelt-edelstahl-a4/). **Im Datenblatt prüfen:** A4 (nicht A2/V2A), *geschlossen*, Klemmbereich, Bohrloch |
+| 3 | **Senkschraube ISO 10642 M5 × 16, A4-70, Innensechskant** | 9 + Reserve → **15–20** | Festpunkte |
+| 4 | **Linsen-/Flachkopfschraube ISO 7380-1 M5 × 12, A4-70, Innensechskant** | 36 + Reserve → **50** | Gleitpunkte. Nicht ISO 7380-**2** (mit Bund — Kopf Ø 10,5 passt nicht in die Ø-11-Senkung mit Spiel) |
+| 5 | **Spanplattenschraube 4,0 × L, Edelstahl A4, Senkkopf, TX20, Vollgewinde, ohne Bohrspitze** | **200** der Länge aus M3 (16 / 20 / 25 mm) — ohne M3: je 100 × 20 und × 25 | [schraubenhandel24 Art. 9047](https://www.schraubenhandel24.de/schrauben/spanplattenschrauben/art-9047/art-9047-spanplattenschrauben-tx-edelstahl-a4-vollgewinde-4/). ~48 Bretter × 3 = ~145 + Probe/Verlust |
+
+### B — Jetzt bestellen: Werkzeug und Hilfsstoffe
+
+| Pos | Artikel | Menge | Bemerkung |
+|---|---|---|---|
+| 6 | **Blindnietmuttern-Zange, Zweihand-Hebel**, Herstellerangabe **„Edelstahl bis M5" oder besser „bis M6"**, mit M5-Dorn | 1 | Einhandzangen schaffen A4 oft nur bis M4/M5 knapp. Das ersetzt die v2-Position „Setzgerät ~50 €" |
+| 7 | **Zapfensenker DIN 373 „M6 mittel" — Ø 11 mm, Führungszapfen Ø 6,6** (HSS) | 1 | Flachsenkung der 36 Gleitpunkte. Tiefenanschlag / Bohrständer, Tiefe 3,0 mm |
+| 8 | **Kegelsenker 90°, HSS, Ø ≥ 12** | 1 | Senkung der 9 Festpunkte, Tiefe bis Kopf bündig |
+| 9 | **HSS-Bohrer Ø 5,5 / 6,6** (Alu) · **HSS-Co Ø 7,0** + Ø 4 zum Vorbohren (Stahl) · **Ø 3,0 lang** (Holz) · **Ø 3,2** (Alu, Sackloch) · **Bohrer-Tiefenstopp** für Ø 3,2 | je 1–2 | Ø 3,2 bricht bei 150 Löchern — 2–3 Stück |
+| 10 | **Schraubensicherung mittelfest** (z. B. Loctite 243) | 1 kleine Flasche | nur Gleitpunkte |
+| 11 | **MS-Polymer**, überstreichbar | 1 Kartusche | Nietmutter-Köpfe; ≥ 24 h aushärten vor Alu-Montage |
+| 12 | **EPDM-Fassadenband 0,8 × 50 mm, selbstklebend** | 20 m | Stöße ≥ 100 mm überlappen |
+| 13 | Ausbesserungslack RAL Rahmen | 1 Stift | Bohrlochränder am Stahl. **Kein Zinkspray** |
+
+### C — Später, nicht Teil dieser Bestellung
+
+| Pos | Artikel | Wann |
 |---|---|---|
-| 1 | Alu-Flachprofil 40 × 6, EN AW-6060, **blank** | 18 m — z. B. 3 Gebinde "3 × 200 cm" (9 Segmente à 2,0 m, 0 % Verschnitt, ~134 €) |
-| 2 | Alu-Blech 2 mm abgekantet, Abdeckprofil | 6,1 m |
-| 3 | Blindnietmutter M6, A4 | ~30 St. |
-| 4 | Senkkopfschraube M6 × 16, A4 | ~30 St. |
-| 5 | Scheibe M6 A4, plan | ~30 St. |
-| 6 | **Senkkopfschraube 4,0 × [Länge nach Messung, s. Bauteil C], A4, Vollgewinde** | ~150 St. |
-| 7 | EPDM-Fassadenband 0,8 × 50 mm | 20 m |
-| 8 | MS-Polymer / Butyl-Dichtmasse | 1 Kartusche |
-| 9 | Hirnholzversiegelung | 1 Gebinde |
-| 10 | Ausbesserungslack RAL Rahmen | 1 Stift |
-| — | Blindnietmuttern-Setzgerät | einmalig ~50 € |
+| 14 | Alu-Abdeckprofil 2 mm, abgekantet, RAL Rahmen, 6,1 m | nach Klärung O3 (Führungsrollen) |
+| 15 | Hirnholzversiegelung, Grund-/Zwischen-/Endanstrich (kupferfrei, O9) | nach Holzfeuchtemessung O1 |
+| 16 | Holzfeuchte-Messgerät (~20 €) | **sofort sinnvoll** — O1 entscheidet die Fugenluft |
 
-**Zuwachs Flügelmasse:** ~127 kg Holz + 11,7 kg Alu + ~4 kg Abdeckung/Befestiger ≈ **143 kg**
-(v1 lag bei ~150 kg).
+**Zuwachs Flügelmasse:** ~127 kg Holz + 15,6 kg Alu + ~4 kg Abdeckung/Befestiger ≈ **147 kg**
+(v2: ~143 kg).
 
 ---
 
 ## 🔧 Montagereihenfolge
 
 1. **Holzfeuchte messen** (O1). Alles Weitere hängt davon ab. Bei < 13 % zuerst akklimatisieren.
-2. **Aufmaß** — alle ⚠️-Annahmen prüfen: Riegellagen, Rahmenebenheit mit Richtlatte, Wandstärke,
-   Federlänge und Nuttiefe an einem Brettpaar.
-3. **Alu-Segmente ablängen** (bis 2,0 m, Lagerlänge nutzen), Bohrbilder **liegend am Boden** anreißen und bohren:
-   je Segment **mittig** ein enges Loch (Festpunkt), alle übrigen als überweites Rundloch (Ø 7 bei M5 / Ø 8 bei M6). Senkungen fräsen.
-4. **Stahl bohren.** Späne sofort entfernen. Erreichbaren Bohrlochrand lackieren.
-5. **Blindnietmuttern setzen**, Flansch vorher in MS-Polymer einbetten.
-6. **EPDM-Band auf die Alu-Vorderflächen** kleben.
-7. **Alu-Segmente montieren**, mittigen Festpunkt zuerst — voll angezogen. Übrige Schrauben (Gleitpunkte,
-   mit Federscheibe): **handfest plus ~1/4–1/2 Umdrehung**, nicht mehr. Probe: Profil an der Stelle
-   von Hand längs schieben — Widerstand ist ok, völlige Starrheit heißt zu fest nachgezogen. 10 mm
-   Stoßfugen einhalten.
+2. **Aufmaß** — alle ⚠️-Annahmen prüfen: Riegellagen, Lage der senkrechten Stäbe, Rahmenebenheit mit
+   Richtlatte, Schweißnaht-Überstände, Federlänge und Nuttiefe an einem Brettpaar.
+3. **Probe Nietmutter** (Bauteil B): eine M5 setzen, beide Schraubenlängen eindrehen — kein Aufstehen
+   am geschlossenen Boden.
+4. **Alu-Segmente vorbereiten, liegend auf der Werkbank:** auf L_seg kürzen, Bohrbild nach Bauteil A
+   anreißen (Reihe 14 mm über Unterkante; 95 / 545 / 995 / 1445 / 1895 mm, Stäbe vorher auf dem Rahmen
+   geprüft). Mitte: Ø 5,5 + Kegelsenkung. Übrige: Ø 6,6 + Flachsenkung Ø 11 × 3,0. Entgraten.
+   **Unten/oben markieren** — das Bohrbild ist nicht symmetrisch.
+5. **Segment am Riegel anlegen, fixieren (Zwingen), durch die Alu-Löcher ankörnen**, Segment abnehmen.
+6. **Stahl bohren** Ø 4 vor, Ø 7,0 fertig. Späne sofort entfernen. Erreichbaren Bohrlochrand lackieren.
+7. **Blindnietmuttern setzen**, Kopf vorher in MS-Polymer. Überstand abwischen. **≥ 24 h aushärten.**
+8. **EPDM-Band auf die Alu-Vorderflächen** kleben (Löcher mit Cutter freischneiden).
+9. **Alu-Segmente montieren**, Festpunkt (Senkkopf) zuerst — voll angezogen. Gleitpunkte (Flachkopf,
+   Loctite 243): **handfest + ~¼ Umdrehung**. Probe: Segment längs mit leichtem Schlag (Gummihammer)
+   bewegbar, ohne dass die Schraube lose ist. 10 mm Stoßfugen einhalten.
    Fluchtung prüfen (Toleranz ± 5 mm auf 2 m, Fachregel 01).
-8. **Bretter vorbereiten:** Grund- und Zwischenanstrich **allseitig vor Montage**. Untere Stirnenden
-   15° anschrägen, Hirnholz versiegeln. Kanten ≥ 2 mm runden.
-9. **Von einer Seite her verlegen** — Feder voraus. Je Brett: einlegen, Fugenluft mit Distanzplättchen
-   einstellen, ausrichten, an jeder der 3 Traglinien Ø 3,0 durch den Federgrund vorbohren, Ø 3,2 ins
-   Alu nachbohren, 4,0 × 40 schräg eindrehen. Nächstes Brett deckt die Schraube ab.
-   **Von vorn, im Stehen, von einer Person machbar.**
+10. **Bretter vorbereiten:** Grund- und Zwischenanstrich **allseitig vor Montage**. Untere Stirnenden
+    15° anschrägen, Hirnholz versiegeln. Kanten ≥ 2 mm runden.
+11. **Von einer Seite her verlegen** — Feder voraus. Je Brett: einlegen, Fugenluft mit Distanzplättchen
+    einstellen, ausrichten, an jeder der 3 Traglinien **8 mm unter der Leisten-Oberkante** Ø 3,0 durch
+    den Federgrund vorbohren, Ø 3,2 ins Alu mit Tiefenstopp nachbohren, 4,0 × L (Tabelle Bauteil C)
+    schräg eindrehen. Nächstes Brett deckt die Schraube ab.
+    **Von vorn, im Stehen, von einer Person machbar.**
 
    > **Praxis-Tipp Zielgenauigkeit:** Die drei Alu-Profile sind nur ~40 mm hoch, der Rest der
    > 2 m Bretthöhe ist dahinter leer — die Präzision entscheidet sich beim **Anreißen, nicht
@@ -561,11 +651,11 @@ und der Sockel ist nicht als Verschleißreihe tauschbar) ist bekannt und wird in
    > z. B. mit einer Schablone oder durch Anhalten am Rahmen. Der 45°-Winkel selbst läuft **in der
    > Waagerechten** — Bohrer seitlich kippen (Feder-Außenkante → Tiefe), **nicht nach oben/unten**.
    > So bleibt die einmal angerissene Höhe über den ganzen Bohrvorgang exakt erhalten.
-10. **Randbretter** symmetrisch auftrennen; letztes Brett muss von vorn befestigt werden — dort einen
+12. **Randbretter** symmetrisch auftrennen; letztes Brett muss von vorn befestigt werden — dort einen
     unauffälligen Punkt wählen (Nutgrund des Nachbarn oder oberste/unterste Zone).
-11. **Abdeckprofil oben** montieren, Gefälle prüfen.
-12. **Endanstrich** vorderseitig.
-13. **Funktionsprobe:** Tor mehrfach komplett verfahren, Führungsrollen und Endanschlag beobachten.
+13. **Abdeckprofil oben** montieren, Gefälle prüfen.
+14. **Endanstrich** vorderseitig.
+15. **Funktionsprobe:** Tor mehrfach komplett verfahren, Führungsrollen und Endanschlag beobachten.
 
 ---
 
@@ -586,7 +676,15 @@ und der Sockel ist nicht als Verschleißreihe tauschbar) ist bekannt und wird in
 | **A2 statt A4** | Streusalz in der Zufahrt |
 | **Profilholzkrallen** | Von Krages und Osmo ausdrücklich ausgeschlossen |
 | **Sichtbare Frontverschraubung** | ~150 Wassereintritte in DK-4-Fichte auf der Wetterseite |
-| **Verklebung Alu/Stahl** | Nicht lösbar, nicht prüfbar, ~143 kg an einem bewegten Bauteil |
+| **Verklebung Alu/Stahl** | Nicht lösbar, nicht prüfbar, ~147 kg an einem bewegten Bauteil |
+| **Flachprofil 40 × 6** (v2) | Windsog: σ_d 165–271 N/mm² gegen 136; bräuchte ~63 statt 45 Stahlbohrungen (v3) |
+| **Flachprofil 40 × 4** (Nutzerfrage v3) | W = 107 mm³ — noch schwächer; kein Platz für Senkung und Holzschrauben-Sackloch |
+| **40 × 8 mit 4 Löchern** (v3) | Zone A σ_d 152 > 136 — das 5. Loch ist die billigste Reserve und liefert zugleich den mittigen Festpunkt |
+| **Senkkopf an Gleitpunkten** (v2) | Kegel zentriert → gleitet nicht; Scheibe unter Senkkopf unmöglich |
+| **Blindnietmutter M6 A4** (v2) | Ø-9-Bohrung im Stahl, von Hand kaum setzbar; M5 trägt die 1,4 kN mit großer Reserve |
+| **Offene Nietmutter** | Wasserweg vom Gewinde ins Rohrinnere |
+| **Flachkopf-Nietmutter / Senkkopf 90°** | Flachkopf hebt die Leiste 1–1,5 mm an; 90°-Senkkopf braucht Senkung im Stahl = mehr verletzte Beschichtung |
+| **Holzschrauben auf Leistenmitte** (v2) | Kollision mit Metallschraubenköpfen; v3: 8 mm unter Oberkante |
 
 ---
 
@@ -596,10 +694,10 @@ und der Sockel ist nicht als Verschleißreihe tauschbar) ist bekannt und wird in
 |---|---|---|
 | **O1** | **Holzfeuchte messen** — 20-€-Gerät, 30 Sekunden | Die gemischten Breiten 100–150 mm deuten auf Innenprofilholz (DIN 68122/68126, 8–12 %) statt Fassadenware (14–18 %). Bei 10 % bräuchten die 150er bis 7 mm Fuge. **Ohne diese Zahl ist die Fugenluft nicht bemessbar** |
 | **O2** | **Windlast 10,7 kN** gegen Pfosten, Fundament, Laufwagen, Endanschlag | Faktor 12 gegenüber dem offenen Rahmen. Gewicht und Fahrbreite sind geprüft — das hier ist ein davon getrennter Nachweis |
-| **O3** | **Läuft die äußere Führungsrolle künftig auf Holz statt Stahl?** Gesamtaufbau ab Stahl-Vorderfläche: 6 + 0,8 + 21 = **27,8 mm ≈ 28 mm** (v1 lag mit dem Rechteckrohr noch bei 41 mm — das Flachprofil hat das Problem bereits verkleinert, aber nicht beseitigt) | Führungsrollen spannen den Rahmen beidseitig spielfrei ein (EP0596362A2). Quellende Fichte mit N+F-Fuge ist keine Rollenbahn. Achtung: die naheliegende Abhilfe „Verkleidung im Riegelbereich aussparen" bricht A4, weil die Aussparung über 6 m von außen sichtbar ist |
-| **O4** | **Kippmoment aus der einseitigen Masse: ~50 Nm, dauerhaft** | ~143 kg mit Schwerpunkt ~37 mm vor der Rahmenmittelebene. Die Laufwagenrollen nehmen das als Rollenpaar auf, in jeder Fahrposition plus dynamisch beim Anschlagen. Das ist eine andere Frage als „trägt der Antrieb das Gewicht" |
+| **O3** | **Läuft die äußere Führungsrolle künftig auf Holz statt Stahl?** Gesamtaufbau ab Stahl-Vorderfläche: 8 + 0,8 + 21 = **29,8 mm ≈ 30 mm** (v3: +2 mm durch 40 × 8) (v1 lag mit dem Rechteckrohr noch bei 41 mm — das Flachprofil hat das Problem bereits verkleinert, aber nicht beseitigt) | Führungsrollen spannen den Rahmen beidseitig spielfrei ein (EP0596362A2). Quellende Fichte mit N+F-Fuge ist keine Rollenbahn. Achtung: die naheliegende Abhilfe „Verkleidung im Riegelbereich aussparen" bricht A4, weil die Aussparung über 6 m von außen sichtbar ist |
+| **O4** | **Kippmoment aus der einseitigen Masse: ~50 Nm, dauerhaft** | ~147 kg mit Schwerpunkt ~39 mm vor der Rahmenmittelebene. Die Laufwagenrollen nehmen das als Rollenpaar auf, in jeder Fahrposition plus dynamisch beim Anschlagen. Das ist eine andere Frage als „trägt der Antrieb das Gewicht" |
 | **O5** | Federlänge, Nuttiefe **und Federlage im 21-mm-Querschnitt** messen | geht in die Fugenbemessung UND in die Schraubenlänge (Bauteil C) ein — ohne diese Messung ist keine sichere Schraubenlänge bestimmbar |
-| **O6** | ~~Wandstärke Rahmenrohr prüfen~~ — **erledigt durch Entscheidung: Blindnietmutter M6, Klemmbereich breit wählen (z. B. 0,5–4,5 mm).** Löst die Unsicherheit auf, statt sie zu messen — bei unbekannter Wandstärke ist die Nietmutter die robustere Wahl, die Direktverschraubung (Bauteil B, Alternative) hängt direkt an einer Zahl, die nicht ermittelbar war, für eine Verbindung, die nie wieder geöffnet wird. Nur falls später doch Interesse an der genauen Wandstärke besteht: zerstörungsfrei per Ultraschall-Wanddickenmessgerät möglich, nicht nötig für diese Entscheidung | Asymmetrisches Risiko: falsch gewählte Direktschraube bei dünnerer Wand als angenommen ist eine dauerhaft schwächere, nicht nachbesserbare Verbindung; ein breiter Klemmbereich bei der Nietmutter deckt jede realistische Wandstärke ab |
+| **O6** | ~~Wandstärke Rahmenrohr prüfen~~ — **erledigt durch Entscheidung: Blindnietmutter (v3: M5 A4 geschlossen), Klemmbereich breit wählen (typ. 0,3–3,5 mm); wenn an einem offenen Rohrende messbar, vor der Bestellung kurz prüfen (Einkaufsliste M2).** Löst die Unsicherheit auf, statt sie zu messen — bei unbekannter Wandstärke ist die Nietmutter die robustere Wahl, die Direktverschraubung (Bauteil B, Alternative) hängt direkt an einer Zahl, die nicht ermittelbar war, für eine Verbindung, die nie wieder geöffnet wird. Nur falls später doch Interesse an der genauen Wandstärke besteht: zerstörungsfrei per Ultraschall-Wanddickenmessgerät möglich, nicht nötig für diese Entscheidung | Asymmetrisches Risiko: falsch gewählte Direktschraube bei dünnerer Wand als angenommen ist eine dauerhaft schwächere, nicht nachbesserbare Verbindung; ein breiter Klemmbereich bei der Nietmutter deckt jede realistische Wandstärke ab |
 | **O7** | Rahmenebenheit mit Richtlatte prüfen | Foto 3 deutet einen Versatz an |
 | **O8** | Entwässerungsöffnungen im Rahmen prüfen | Kondensat im Hohlprofil ist der Angriffspunkt an der Nietmutter-Bohrung |
 | **O9** | Holzschutzmittel **kupferfrei** wählen | Kupferhaltige Mittel wirken „stark korrosiv" gegenüber unedlen Metallen (Fraunhofer WKI). Für Zink belegt, für Alu Analogieschluss |
@@ -649,3 +747,28 @@ gestrichenen Bauteile sind **entfernt, nicht mit einer Schutzmaßnahme umbaut**.
 Die Prüfung lief auf demselben Modell wie die Erstellung. **Das ist eine reale Einschränkung der
 Unabhängigkeit**, keine Formalie: gemeinsame blinde Flecken bleiben in erheblichem Maß bestehen.
 Version 2 ist ungeprüft.
+
+### Version 3 — Final-Prüfung vor Bestellung (2026-09-23)
+
+**Modus:** Selbstkritik des Autors (Nachrechnung aller bestellrelevanten Maße), **keine unabhängige
+Prüfung** dieser Version. Befunde und Disposition:
+
+| Befund | Schwere | Disposition |
+|---|---|---|
+| Windsog-Biegung der Leiste nie nachgewiesen; 40 × 6 / 4 Löcher überlastet | hoch | **40 × 8, 5 Löcher**, Nachweis in Bauteil A |
+| Senkkopf kann nicht gleiten; Scheiben unter Senkkopf unmöglich | hoch | Festpunkt Senkkopf, Gleitpunkte ISO 7380 in Flachsenkung |
+| Kein Loch in Segmentmitte für den „mittigen" Festpunkt | mittel | Raster 95/545/995/1445/1895 |
+| 3 × 2,00 m + Fugen > 6,00 m | mittel | L_seg nach Aufmaß (1990 mm) |
+| Holzschrauben und Metallköpfe auf gleicher Höhe | mittel | Höhenzonen 14 mm / 8 mm |
+| A4-M6-Nietmutter von Hand kaum setzbar, offene Ausführung = Wasserweg | mittel | M5 A4 geschlossen, kleiner Senkkopf, Zweihandzange |
+| MS-Polymer nass unter Gleitpunkt klebt fest | mittel | 24 h Aushärten vor Alu-Montage |
+| Veraltete Angaben (Langloch-Reste, „4,0 × 40", Stückzahlen ~30 statt 36) | niedrig | bereinigt |
+
+**Grenzen:** Nachweise sind Ingenieur-Abschätzungen (Balken-FE je Segment, Lastannahmen wie v2), kein
+Statiknachweis; Gewindetiefe der geschlossenen Nietmutter und Ausziehwert der Holzschraube im Alu
+werden durch die Pflicht-Proben (Bauteil B/C) abgesichert, nicht durch Herstellerwerte. O2–O4
+(Windlast auf Pfosten/Laufwagen, Führungsrollen, Kippmoment) bleiben unverändert offen — sie betreffen
+nicht die jetzige Bestellung, wohl aber die Frage, ob das Tor vollflächig beplankt werden sollte.
+
+
+**Freigabe:** 2026-09-23 durch den Nutzer, auf Basis der Autoren-Selbstprüfung (keine unabhängige Prüfung von v3 — bewusst in Kauf genommen).
